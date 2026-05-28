@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発達心理学：第5回 能動的様相と認知発達</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --primary-color: #1a3022; --accent-color: #af5239; --bg-color: #f6f8f6; --text-color: #2b3530; }
+        body { background-color: #e2e7e4; color: var(--text-color); font-family: 'Noto Serif JP', serif; line-height: 1.9; padding: 40px 20px; }
+        .book-container { background-color: var(--bg-color); max-width: 840px; margin: 0 auto; padding: 80px 90px; box-shadow: 0 15px 45px rgba(27, 41, 33, 0.15); }
+        h1, h2, h3 { color: var(--primary-color); font-family: 'Noto Sans JP', sans-serif; font-weight: 700; }
+        .bold-text { font-weight: 700; color: var(--primary-color); }
+        .highlight { border-bottom: 2px solid rgba(175, 82, 57, 0.3); font-weight: 700; color: var(--primary-color); }
+        .visual-illustration { background: #fff; border: 1px solid #d8e0da; margin: 40px 0; padding: 15px; border-radius: 8px; }
+        .visual-illustration img { display: block; width: 100%; height: auto; object-fit: contain; }
+        .caption { font-size: 13px; color: #5c6a61; text-align: center; padding: 12px; border-top: 1px solid #d8e0da; margin-top: 10px; }
+        .definition-box { background: #fff; border-left: 4px solid var(--primary-color); border: 1px solid #d8e0da; border-radius: 0 8px 8px 0; padding: 25px 30px; margin: 30px 0; }
+        .linkage-column { background: #f4f7f5; border: 1px solid var(--primary-color); padding: 30px 35px; margin: 45px 0; border-radius: 8px; }
+        .assignment-section { background-color: var(--primary-color); color: #fff; padding: 60px 50px; border-radius: 12px; margin-top: 100px; }
+        .submit-btn { background-color: var(--accent-color); color: #fff; border: none; padding: 18px 40px; border-radius: 30px; cursor: pointer; width: 100%; font-weight: 700; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="book-container">
+    <header class="text-center mb-16">
+        <h1 class="text-4xl mb-4">発達心理学 第5回</h1>
+        <p class="text-xl text-accent-color italic">能動的様相：世界を構造化する身体と脳</p>
+    </header>
+
+    <section class="mb-12">
+        <h2 class="text-2xl mb-6">1. 乳児は「能動的な科学者」である</h2>
+        <p>皆さんは「赤ちゃんは受動的に親からの刺激を受けて育つ」と考えていないでしょうか。近年の発達心理学では、乳児は生まれながらにして<strong class="highlight">「能動的様相（Active Aspect）」</strong>を持つ存在であることが示されています。彼らは決して情報をただ受け取るだけの器ではなく、自らの五感を駆使し、周囲の世界を探索し、その構造をコピーし、理解しようとする「小さな科学者」なのです。</p>
+        <p>例えば、乳児が手足をバタバタさせるのは無意味な運動ではありません。それは「身体という道具」を使って、空間の広がりや対象物との距離を測り、自分の意志が世界にどのように作用するかという「間マッピング」を行っているプロセスなのです。</p>
+        <div class="visual-illustration">
+            <img src="1.png" alt="赤ちゃんの探索行動" onerror="this.src='https://placehold.co/800x400/f6f8f6/1a3022?text=Infant+Active+Exploration'">
+            <div class="caption">図1：自らの身体運動を通じて世界を理解し、その構造を脳内にコピーしていく乳児の姿。</div>
+        </div>
+    </section>
+
+    <section class="mb-12">
+        <h2 class="text-2xl mb-6">2. 運動と認知を統合する脳の回路</h2>
+        <p>「なぜ、運動が認知発達とこれほど深く結びついているのか」。その答えは脳の構造にあります。運動を司る運動野、計画を立てる前頭前野、そして予測誤差を計算し修正する小脳は、連携して働いています。</p>
+        <div class="definition-box">
+            <h3 class="text-lg font-bold">運動制御の3つの鍵</h3>
+            <p><strong class="bold-text">遠心性コピー（Efferent Copy）：</strong>運動野が筋肉に指令を出す際、その内容を小脳にも送る複製データです。これにより、脳は「自分が意図して動かしたのか、偶然動いたのか」を区別できます。</p>
+            <p><strong class="bold-text">固有受容感覚：</strong>自分の体が今、どこにあるのかという筋肉や関節からの感覚情報です。</p>
+            <p><strong class="bold-text">予測誤差：</strong>運動の指令（遠心性コピー）と実際の体の状態（固有受容感覚）がずれた際、小脳がこれを検知し、瞬時に回路を修正することで、私たちは自分の動きを正確にコントロールします。</p>
+        </div>
+        <p>目をつぶっていても自分の鼻を正確に触れるのは、この精巧な修正システムが常に稼働しているからです。乳児は、ハイハイや歩行という身体運動を通じて、この「予測と修正」のサイクルを高速で繰り返し、知能という名の心の枠組みを物理的に構築しているのです。</p>
+    </section>
+
+    <div class="linkage-column">
+        <h3 class="text-lg font-bold mb-3"><i class="fa-solid fa-graduation-cap"></i> 学びの繋がり：体育や数学と発達の共通点</h3>
+        <p>体育の時間、新しいスポーツを学ぶときに体がうまく動かない、あるいは数学の計算練習で最初はつまずく。これらの経験は、まさに今回の「予測誤差」との格闘です。最初は脳内でのイメージ（遠心性コピー）と、実際の身体の動きや計算結果が一致しません。しかし、何度も繰り返すうちに小脳や大脳皮質がフィードバックを重ね、誤差を修正していきます。皆さんがこれまで経験してきた「苦しい練習」は、脳の回路を再構築し、自身の知能を物理的に書き換えるプロセスそのものだったのです。</p>
+    </div>
+
+    <section class="mb-12">
+        <h2 class="text-2xl mb-6">3. 物事の構造を発見する：「A not B error」</h2>
+        <p>乳児がどのように世界の構造を理解しているかを調べる有名な実験に「A not B error」があります。おもちゃを隠す場所を「A」から「B」に変えても、乳児は以前隠していた「A」の場所を探し続けてしまいます。これは、彼らが「イメージ」ではなく、「特定の運動」として記憶を保持しているからだと考えられます。</p>
+        <div class="visual-illustration">
+            <img src="2.png" alt="A not B errorの実験" onerror="this.src='https://placehold.co/800x400/f6f8f6/1a3022?text=A+Not+B+Error">
+            <div class="caption">図2：感覚や運動で記憶する段階から、イメージで記憶する段階への進化。</div>
+        </div>
+        <p>教育（Educate）の語源は「引き出すこと」です。能動的に世界を探索し、失敗し、大人からフィードバックを得る。EPPEプロジェクト（就学前教育の長期的影響に関する研究）が示すように、この能動的な対話の質が高い環境で育った子どもは、将来の社会性や論理的思考力に有意な差が出ます。知能とは、頭の中だけで育つものではなく、体というツールを通して、世界と対話する中で形作られるものなのです。</p>
+    </section>
+
+    <section class="assignment-section">
+        <h2 class="text-2xl mb-6 text-white"><i class="fa-solid fa-pen-to-square"></i> 確認テスト</h2>
+        <form id="submission-form">
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">学籍番号</label>
+                <input type="text" id="student-id" placeholder="例：24A000" required class="w-full p-3 rounded text-black">
+            </div>
+            <div class="mb-6 bg-white/10 p-5 rounded-lg">
+                <p class="font-bold mb-3">問1：運動指令の複製を小脳へ送り、意図した動きと実際の動きのズレ（予測誤差）を検知するために使われるデータを何と呼びますか？</p>
+                <label class="block mb-2"><input type="radio" name="q1" value="0"> 1. 認知的予備能</label>
+                <label class="block mb-2"><input type="radio" name="q1" value="1"> 2. 遠心性コピー</label>
+            </div>
+            <div class="mb-6 bg-white/10 p-5 rounded-lg">
+                <p class="font-bold mb-3">問2：乳児が隠された場所を間違えて探してしまう「A not B error」は、乳児が何を主な手がかりに記憶しているためと説明されますか？</p>
+                <label class="block mb-2"><input type="radio" name="q2" value="0"> 1. 抽象的なイメージ</label>
+                <label class="block mb-2"><input type="radio" name="q2" value="1"> 2. 感覚や運動（身体動作）</label>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2 font-bold">質問・感想</label>
+                <textarea id="question" rows="3" class="w-full p-3 rounded text-black"></textarea>
+            </div>
+            <button type="button" class="submit-btn" onclick="sendMail()">提出する</button>
+        </form>
+    </section>
+</div>
+
+<script>
+    function sendMail() {
+        const studentId = document.getElementById('student-id').value;
+        const q1 = document.querySelector('input[name="q1"]:checked');
+        const q2 = document.querySelector('input[name="q2"]:checked');
+        if (!studentId || !q1 || !q2) { alert('すべて入力してください'); return; }
+        const score = Math.floor((( (q1.value === "1") + (q2.value === "1") ) / 2) * 100);
+        const body = encodeURIComponent(`学籍番号:${studentId}\n得点:${score}点\n\n【質問・感想】\n${document.getElementById('question').value}`);
+        window.location.href = `mailto:yoshinori-shibasaki@shikoku-u.ac.jp?subject=[フォローアップ提出]${studentId}&body=${body}`;
+    }
+</script>
+</body>
+</html>
