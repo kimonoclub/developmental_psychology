@@ -3,115 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>発達心理学：愛着と心の絆</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ポータルの全体スキャナーが自動収集・クレンジングするタイトルタグ -->
+    <title>発達心理学：自己と他者の誕生、そして愛着のダイナミクス：幼児期健忘の謎から安全基地の確立まで</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- 共通メール送信JSモジュールの読み込み（相対パス・アドレス非表示仕様） -->
+    <script src="../js/mail-sender.js"></script>
     <style>
-        :root { --primary-color: #1a3022; --accent-color: #af5239; --bg-color: #f6f8f6; --text-color: #2b3530; }
-        body { background-color: #e2e7e4; color: var(--text-color); font-family: 'Noto Serif JP', serif; line-height: 1.9; padding: 40px 20px; }
-        .book-container { background-color: var(--bg-color); max-width: 840px; margin: 0 auto; padding: 80px 90px; box-shadow: 0 15px 45px rgba(27, 41, 33, 0.15); }
-        h1, h2, h3 { color: var(--primary-color); font-family: 'Noto Sans JP', sans-serif; font-weight: 700; }
-        .bold-text { font-weight: 700; color: var(--primary-color); }
-        .highlight { border-bottom: 2px solid rgba(175, 82, 57, 0.3); font-weight: 700; color: var(--primary-color); }
-        .visual-illustration { background: #fff; border: 1px solid #d8e0da; margin: 40px 0; padding: 15px; border-radius: 8px; }
-        .visual-illustration img { display: block; width: 100%; height: auto; object-fit: contain; }
-        .caption { font-size: 13px; color: #5c6a61; text-align: center; padding: 12px; border-top: 1px solid #d8e0da; margin-top: 10px; }
-        .definition-box { background: #fff; border-left: 4px solid var(--primary-color); border: 1px solid #d8e0da; border-radius: 0 8px 8px 0; padding: 25px 30px; margin: 30px 0; }
-        .linkage-column { background: #f4f7f5; border: 1px solid var(--primary-color); padding: 30px 35px; margin: 45px 0; border-radius: 8px; }
-        .assignment-section { background-color: var(--primary-color); color: #fff; padding: 60px 50px; border-radius: 12px; margin-top: 100px; }
-        .submit-btn { background-color: var(--accent-color); color: #fff; border: none; padding: 18px 40px; border-radius: 30px; cursor: pointer; width: 100%; font-weight: 700; margin-top: 20px; }
+        /* 学術的気品を表現するハイライト装飾 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
 
-<div class="book-container">
-    <header class="text-center mb-16">
-        <h1 class="text-4xl mb-4">発達心理学 第6回</h1>
-        <p class="text-xl text-accent-color italic">自分はどう作られるか ―愛着の歴史と成人のアタッチメント―</p>
+    <!-- ヘッダー・ナビゲーション -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-950 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold tracking-wider text-sm sm:text-base">発達心理学 ビジュアル副読本</span>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors">講義ポータルへ戻る</a>
+        </div>
     </header>
 
-    <section class="mb-12">
-        <h2 class="text-2xl mb-6">1. 愛着研究の黎明期：ルネ・スピッツとホスピタリズム</h2>
-        <p>私たちが「自分」という存在を確立し、社会の中で他者と関わるための根源的な絆を<strong class="highlight">アタッチメント（愛着）</strong>と呼びます。この研究の歴史は1940年代、第二次世界大戦の前後にまで遡ります。</p><br>
-
-        <p>先駆者である<strong class="bold-text">ルネ・スピッツ（René Spitz）</strong>は、当時の乳児施設で、衛生的で栄養も十分でありながら、特定の養育者との心の交流がない乳児たちが次々と衰弱し、高い確率で亡くなる「ホスピタリズム」を報告しました。これは、「人間が生存するためには、物質的なケアだけでは不十分であり、精神的な絆が酸素と同等に不可欠である」という、発達心理学における最も衝撃的な発見でした。</p>
-        <div class="visual-illustration">
-            <img src="1.png" alt="ホスピタリズムの悲劇" onerror="this.src='https://placehold.co/800x400/f6f8f6/1a3022?text=Hospitalism+Research'">
-            <div class="caption">図1：人が健康に生きていくためには基本的な信頼関係が必要</div>
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-indigo-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第6回 講義資料</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                自己と他者の誕生、そして愛着のダイナミクス<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">幼児期健忘の謎から安全基地の確立まで</span>
+            </h1>
+            <div class="w-16 h-1 bg-indigo-600 mx-auto rounded"></div>
         </div>
-        <p>スピッツの発見は、乳児という存在が受動的な栄養の受け手ではなく、他者との関係を必要とする能動的な社会的存在であることを社会に知らしめました。この知見は、のちの愛着理論の礎となります。</p>
-    </section>
 
-    <section class="mb-12">
-        <h2 class="text-2xl mb-6">2. ジョン・ボウルビィと内的ワーキングモデル</h2>
-        <p>スピッツの研究を引き継いだ<strong class="bold-text">ジョン・ボウルビィ（John Bowlby）</strong>は、愛着を「生存戦略」と位置づけました。乳児の泣きや後追い行動は、単なる未熟さではなく、外敵や飢餓から自分を守るための、進化論的な防衛プログラムです。ボウルビィは、この関係性を通じて子供の脳内に<strong class="highlight">内的ワーキングモデル（Internal Working Model: IWM）</strong>という「心の設計図」が構築されると論じました。</p><br>
-
-
-        <p>内的ワーキングモデルは、他者は信頼できるか（他者モデル）、自分は助けられる価値があるか（自己モデル）という問いに対する無意識の答えです。これは3歳以前の記憶がほとんどない「幼児期健忘」の時期に形成されるため、自分では思い出すことができませんが、その後の人生におけるあらゆる対人関係のプロトタイプとして、強力に働き続けます。</p>
-    </section>
-
-    <section class="mb-12">
-        <h2 class="text-2xl mb-6">3. 成人期のアタッチメント・スタイルと適応戦略</h2>
-        <p>メアリー・エインズワースの実験を経て、愛着理論は成人期へと拡張されました。<strong class="bold-text">バーソロミュー（Bartholomew, K.）</strong>の分類によれば、成人のアタッチメントは、他者への信頼と自己への肯定的評価の組み合わせにより4つに分けられます。</p>
-        <div class="definition-box">
-            <h3 class="text-lg font-bold">成人期の主要4スタイル</h3>
-            <p><strong class="bold-text">安定型：</strong>自己と他者を信頼できる。素直に助けを求め、良好な親密さを保てる。</p>
-            <p><strong class="bold-text">とらわれ型：</strong>自己の価値を低く見るが、他者は求める。見捨てられる不安から、相手の言動に過敏に反応しやすい。</p>
-            <p><strong class="bold-text">拒絶・軽視型：</strong>自尊心は高いが他者を信頼しない。過剰な自立を強調し、情緒的な親密さを遮断する。</p>
-            <p><strong class="bold-text">恐れ型：</strong>自己も他者も否定的に捉える。親密さを求めたいが、傷つくのが怖くて近づけない。</p>
+        <!-- イントロダクション -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-indigo-50 to-slate-50">
+                <h3 class="text-base sm:text-lg font-bold text-indigo-950 mb-3">イントロダクション：私たちが他者と生きるための「見えない基盤」</h3>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                    現代社会を生きる私たちは、日々、多様で複雑な対人関係のネットワークの中で暮らしています。友人、家族、恋人、あるいは将来皆さんが赴くことになる医療・保育・ビジネスの現場における同僚やクライエントたち――。これらの人々に対して、私たちは時に素直に頼ることができ、時に「拒絶されるのではないか」と強い不安を抱き、あるいは「最初から一人でいる方が安全だ」と親密さを避けてしまうことがあります。
+                </p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                    なぜ、人間は他者との距離の取り方にこれほど多様な「個人差」を示すのでしょうか。また、その個人差は一体いつ、どのような環境の中で形作られるのでしょうか。心理学における発達的アプローチは、この根源的な問いに対して「自己の誕生」と<strong class="highlight">「愛着（アタッチメント：Attachment）」</strong>という２つの強力な概念を提示してきました。愛着とは、特定の他者との間に形成される、時間的・空間的に持続する情動的（エモーショナル）な深い絆のことです。
+                </p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified">
+                    本稿では、人間がいかにして世界から「自分」を発見し、他者を「安全基地」として世界の探索を始めていくのか、そのスリリングな発達のプロセスを紐解きます。そして、「乳児期の経験がすべてを決定し、その後の人生は取り返しがつかない」という過度な決定論的誤解を科学的に修正し、人間の心がいかに柔軟に変容・修正可能なものであるかという「生涯発達における回復可能性」について、緻密な統計的・理論的視座から探求していきます。
+                </p>
+            </div>
         </div>
-        <p>ここで理解すべき最も重要な点は、これらのスタイルは決して「欠陥」ではないということです。これらは、幼少期に自分自身を傷つくことから守るために、脳が獲得せざるを得なかった<strong class="highlight">必死の適応戦略（生き残るための格闘の歴史）</strong>です。例えば、拒絶・軽視型の人は、愛しても無駄だった環境で、傷つかないために「感情を遮断する」という戦術を学習した結果なのです。それは、当時の環境では最も賢明な生存戦略でした。</p>
-    </section>
 
-    <section class="mb-12">
-        <h2 class="text-2xl mb-6">4. リフレクティブ・ファンクション：物語の書き換え</h2>
-        <p>過去の防衛戦略が、現在の人間関係において不適合（ミスマッチ）を起こしていると感じる場合、私たちはその物語を書き換えることができます。その鍵となるのが<strong class="highlight">リフレクティブ・ファンクション（省察的機能）</strong>の研究です。これは、自分の心の動きを客観的に観察（メタ認知）し、他者の内面を推論する能力を指します。</p><br>
+        <!-- 1. 「自己」と「他者」の分離 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                1. 「自己」と「他者」の分離：幼児期健忘の謎と自己の誕生プロセス
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">幼児期健忘というミステリー：なぜ私たちは最初の3年間を覚えていないのか</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                学生の皆さんに、まず一つの問いを投げかけたいと思います。「あなた自身の『一番古い記憶』はどのようなものですか？」おそらく多くの人が、幼稚園や保育園に通っていた頃の記憶や、3歳から4歳頃の出来事を思い浮かべたのではないでしょうか。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                実は、人間には生後2〜3歳頃までの記憶を大人になったときにほとんど思い出すことができないという、奇妙な認知の空白期間が存在します。心理学ではこの現象を<strong class="highlight">「幼児期健忘（Infantile Amnesia）」</strong>と呼びます。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                なぜ、私たちは人生の最初の数年間という極めて重要な時期の記憶を失ってしまうのでしょうか。これには「脳の海馬の未発達」や「言語の獲得の有無」などいくつかの理論が提唱されていますが、発達心理学が最も重視するのは、<strong class="highlight">「当時のあなたの中に、記憶の主人公（自分＝自己概念）がまだ明確に誕生していなかったから」</strong>という理論です。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                出来事を「これは『私』が経験したことだ」として人生の物語（自伝的記憶）に綴じるためには、その前提として「私」というファイルのインデックス（存在）が不可欠です。つまり、幼児期健忘の正体は、脳の忘却などではなく、「その出来事を経験しているはずの『自己』が、まだそこに作られていなかった」という、人間の精神発達における深遠な事実を物語っているのです。
+            </p>
 
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">自己は作られるものである：自他分離の動的４ステップ</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                私たちは「自分」という存在が生まれつき当たり前に備わっていると思いがちですが、発達心理学において「自己」とは、決して最初からそこに存在するものではありません。自己は、環境や他者との動的な相互作用の中で、段階的に「作られていくもの」なのです。乳児は以下のような緻密なステップを経て、世界から「自分」という存在を切り離していきます。
+            </p>
 
-        <p>過去の適応戦略が「今、なぜこの状況で発動しているのか」という予測エラーに気づくこと。自分を、そして他者を、決めつけずに別の視点から見直すこと。このリフレクティブ・ファンクションを鍛えることで、私たちは過去のプログラムを上書きし、「獲得された安定型」へと成長し続けることが可能なのです。</p>
-    </section>
-
-    <div class="linkage-column">
-        <h3 class="text-lg font-bold mb-3"><i class="fa-solid fa-graduation-cap"></i> 学びの繋がり：過去から未来への対話</h3>
-        <p>小学校・中学校の道徳や国語の授業で「相手の気持ちを想像しよう」と習ったことは、実はこのリフレクティブ・ファンクションを養う訓練でした。発達心理学の知識があれば、過去の学びを「ただの教科の知識」ではなく、「人間として、自分自身をよりよく生きるための強力な技術」として再解釈できます。学んできたことは、全て今の自分という物語を豊かにするためのピースなのです。</p>
-    </div>
-
-    <section class="assignment-section">
-        <h2 class="text-2xl mb-6 text-white"><i class="fa-solid fa-pen-to-square"></i> 確認テスト</h2>
-        <form id="submission-form">
-            <div class="mb-4">
-                <label class="block mb-2 font-bold">学籍番号</label>
-                <input type="text" id="student-id" placeholder="例：24A000" required class="w-full p-3 rounded text-black">
+            <div class="space-y-4 my-6">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-indigo-900 mb-1">① 生後3ヶ月：身体の発見「ハンドリガード」</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified">
+                        乳児が自分の目の前に両手をかざし、不思議そうにじっと見つめたり、動かしたりする行動を指します。これは「この視界に映る物体（手）は、自分の意志と連動して動くぞ」という、自らの身体的自己の最初の発見であり、ここから世界と自分の分離がスタートします。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-indigo-900 mb-1">② 生後9ヶ月：他者予測の芽生え「共同注視」</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified">
+                        養育者が指差した方向を赤ちゃんも同時に見つめる現象を「共同注視」と呼びます。それまでは「自分と親」という1対1の二者関係しか持てなかった子どもが、「自分・他者・対象物」の三者関係を構築できるようになる、他者予測の始まりです。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-indigo-900 mb-1">③ 生後10ヶ月：他者の心を鏡にする「社会的参照」</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified">
+                        子どもは、新しい環境や見たことのないおもちゃに直面したとき、自ら進んで保護者の「表情（顔色）」を確認します。保護者が笑顔であれば安心して触り、不安そうな顔をしていれば行動を抑制します。一見危険に見えるガラス張りの深い崖を模した実験空間（社会的参照レイアウト）でも、幼児は段差の手前で母親の表情を観察し、母親が「微笑み」を見せると崖を這い越え、母親が「怯えの表情」を見せると激しい葛藤を示して引き返します。子どもは他者の感情を媒介にすることで初めて、自らの行動を決定できるようになるのです。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-indigo-900 mb-1">④ 2歳頃：明確な「自己像」の確立「ルージュのテスト」</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified mb-2">
+                        こうしてステップを積み重ねたのち、子どもは生後18ヶ月〜24ヶ月頃にようやく明確な「自己像」を確立します。これを示したのが「ルージュのテスト（鏡映像自己認知実験）」です。子どもの鼻の頭に、本人に気づかれないようにそっと赤いルージュ（紅）を塗って鏡の前に立たせます。生後15ヶ月未満の子どもは、鏡の表面を触ったり裏側を覗き込んだりして「他者の赤ちゃん」として反応します。しかし、生後18ヶ月〜24ヶ月（2歳頃）を過ぎると、鏡を見た瞬間にハッとして、自分自身の鼻に直接手を伸ばして赤くなった部分をこすり取ろうとするのです。鏡の視覚情報と脳内の「自己イメージ」を照合し、「自分の顔に変なものがついている」と気づいた証拠です。
+                    </p>
+                    <p class="text-slate-600 text-xs italic border-t border-slate-100 pt-2 mt-2">
+                        ※隔離されて育った（他者との交流がない）チンパンジーの実験では、通常なら数日でできる鏡の自己認知が生涯できないというデータがあります。人間も同様に、「自己イメージを形成し、自分を認知するためには、自らを映し出す鏡としての『他者の存在』が絶対に不可欠である」という動的相互作用論の決定的な事実がここに示されています。
+                    </p>
+                </div>
             </div>
-            <div class="bg-white/10 p-5 rounded-lg mb-6">
-                <p class="font-bold mb-3">問1：バーソロミューのモデルにおいて、自分は価値があるが他者は信頼できず、過剰に自立を強める型を何と呼びますか？</p>
-                <label><input type="radio" name="q1" value="0"> 1. とらわれ型</label><br>
-                <label><input type="radio" name="q1" value="1"> 2. 拒絶・軽視型</label>
-            </div>
-            <div class="bg-white/10 p-5 rounded-lg mb-6">
-                <p class="font-bold mb-3">問2：過去のアタッチメントによる自動的な反応を客観視し、物語を更新するために必要な能力は何ですか？</p>
-                <label><input type="radio" name="q2" value="0"> 1. ホスピタリズム</label><br>
-                <label><input type="radio" name="q2" value="1"> 2. リフレクティブ・ファンクション</label>
-            </div>
-            <div class="mb-4">
-                <label class="block mb-2 font-bold">質問・感想</label>
-                <textarea id="question" rows="3" class="w-full p-3 rounded text-black"></textarea>
-            </div>
-            <button type="button" class="submit-btn" onclick="sendMail()">提出する</button>
-        </form>
-    </section>
-</div>
+        </section>
 
-<script>
-    function sendMail() {
-        const studentId = document.getElementById('student-id').value;
-        const q1 = document.querySelector('input[name="q1"]:checked');
-        const q2 = document.querySelector('input[name="q2"]:checked');
-        if (!studentId || !q1 || !q2) { alert('すべて入力してください'); return; }
-        const score = Math.floor((( (q1.value === "1") + (q2.value === "1") ) / 2) * 100);
-        const body = encodeURIComponent(`学籍番号:${studentId}\n得点:${score}点\n\n【質問・感想】\n${document.getElementById('question').value}`);
-        window.location.href = `mailto:yoshinori-shibasaki@shikoku-u.ac.jp?subject=[フォローアップ提出]${studentId}&body=${body}`;
-    }
-</script>
+        <!-- 2. 愛着（アタッチメント）の型と行動ダイナミクス -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                2. 愛着（アタッチメント）の型と行動ダイナミクス
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">安全基地から始まる能動的な探索活動</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                他者の存在によって「自己」の輪郭を作り始めた乳幼児にとって、特定の他者との間に形成される情緒的な絆、すなわち「愛着（アタッチメント：Attachment）」は、すべての発達を支える安全の基盤となります。アタッチメントの心理学的本質は、以下の2つの行動のバランスによって表現されます。
+            </p>
+
+            <div class="bg-indigo-50 border border-indigo-100 p-6 rounded-xl my-6 space-y-3">
+                <p class="text-slate-700"><strong class="text-indigo-950">安全基地（Secure Base）：</strong> 恐怖や不安を感じたときに、そこに戻れば絶対に守られ、安心感を回復できる、心の内的な拠り所のことです。</p>
+                <p class="text-slate-700"><strong class="text-indigo-950">探索活動（Exploration）：</strong> 安全基地から出発し、周囲の環境へと自ら能動的に働きかけ、おもちゃに触り、社会と関わっていくプロセスのことです。</p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                人間は、絶対的な安心をもたらす「安全基地」を手に入れるからこそ、初めて外の世界へと果敢に飛び出す「探索活動」を広げることができます。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">ストレンジ・シチュエーション法（SSP）に見る4つの愛着スタイル</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                メアリー・エインズワース（Mary Ainsworth）は、母親との一時的な分離（ストレス付与）と、その後の「再会」の場面における子どもの行動特性から、愛着の質を以下の4つのスタイルに分類しました。
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-indigo-950 mb-2">A群（回避型）</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        母親が部屋を出ていっても表面上は泣かず、戻ってきた再会時にも母親を無視したり避ける行動（シャットダウン）を取ります。「求めても拒絶される」という過去の環境への適応として、アラームシステムをあえて「不活性化」させて自分を守っている脳の防衛戦略です。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-indigo-950 mb-2">B群（安定型）</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        分離時には素直に不安を表明して泣きますが、再会すると母親に駆け寄って抱っこを求め、速やかに安心感を取り戻して再びおもちゃの「探索活動」へと戻っていきます。他者への信頼と自己への肯定感が調和している健康的なモデルです。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-indigo-950 mb-2">C群（抵抗型／アンビバレント型）</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        分離時に激しくパニックを起こし、再会時には抱っこを求めながら同時に母親を叩くといった怒りと抵抗を示します。養育態度が気まぐれな環境への適応であり、過剰にしがみつかないと親を繋ぎ止められないという脳の「過活動化戦略」の名残です。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-indigo-950 mb-2">D群（無秩序型）</h4>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        母親が戻ってきたときに、近づきながら顔を背けたり、床に崩れてフリーズ（凍りつき）するなど、一貫性のない行動を示します。主に虐待を受けている子どもに見られ、守ってくれるはずの親が「恐怖の対象（脅威）」になってしまっているという、解決不能なジレンマによるシステムの崩壊状態です。
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">性格の欠点ではない：内的モデルのアップデートと回復可能性</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                これら不安定な愛着スタイル（A群やC群など）に基づく不器用な対人行動は、決して本人の人格的な欠点ではありません。すべては<strong class="highlight">「幼少期の過酷な環境を生き延びるために、自らの脳が必死に学習した防衛戦略の名残」</strong>なのです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                そして、現代の発達心理学において、この対人関係の認知フィルター（内的ワーキングモデル）は後天的にいくらでも書き換え・修正が可能であることが証明されています。それは、自らの不安の癖を客観視する「メタ認知」、過去の恐怖予測を裏切る現実に触れる「予測エラーの経験」、そして新たな友人やパートナーなど「安全基地となる人間関係」を通じて、大人になってからでも<strong class="highlight">「獲得された安定型（Earned Secure）」</strong>へとダイナミックに変容・アップデートできるのです。
+            </p>
+        </section>
+
+        <!-- コラム：国語の心情取得（精緻化リハーサル） -->
+        <section class="mb-16 bg-gradient-to-br from-slate-900 to-indigo-950 text-slate-100 p-6 sm:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg sm:text-xl font-bold text-amber-400 border-b border-slate-700 pb-3 mb-6 flex items-center">
+                <span class="mr-2">💡</span> 精緻化リハーサル・コラム：国語の「心情取得」と個人×環境の相互作用モデル
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                小学校や中学校の国語の授業で、小説のテキストを読みながら「この時の主人公の気持ちを説明しなさい」という心情理解の問題を解いたときのことを思い出してください。私たちはそれを単なるペーパーテストの技術だと思いがちですが、実はあの訓練こそが、目に見える行動の奥にある、目に見えない他者の「心」を推し量る能力（他者視点取得能力や共感性）の強固な基礎を培う場だったのです。
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified">
+                幼児期に「ルージュのテスト」で他者を鏡にして自己像を発見した私たちは、学校教育という豊かな「社会化（Socialization）」の空間のなかで、仲間との対等な葛藤や話し合い、そして物語の読解などを経験していくなかで、批判的思考力や自律的な判断力を劇的に発達させていきます。命令にただ盲従せず、おかしいことに対して「従わない」と言える力や、他者と健康的な関係を築く力は、生まれつき備わった単なる反抗心や性格特性ではなく、長い発達のプロセスの中で環境と関わりながら育まれる、高度な認知的・社会的能力なのです。
+            </p>
+        </section>
+
+        <!-- まとめ -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                📌 まとめ：個人×環境の相互作用モデルへ向けて
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                発達心理学の研究では、人は生まれながらに決定された善人でも悪人でもなく、他者との関わりや教育、社会経験を通して生涯にわたり判断力や共感性を自律的に発達させてしていく存在だと考えられています。私たちの行動は状況や過去の環境の影響を強く受けます。しかし同時に、私たちは経験から学び、自らを変え、環境を変える力も持っています。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                心理学は、人間の弱さを暴いて絶望する学問ではありません。人間がより善く振る舞える発達的・環境的条件を発見し、それを社会のシステムの中に実装していくための学問です。「過去のせいで自分がこうなった」という単一原因論の檻を飛び越えて、皆さんはぜひ、これから自分自身が赴く現場を想像しながら考えてみてください。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified font-medium text-indigo-950 bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                「人は状況や環境に影響される。だからこそ重要なのは、個人の強さや英雄的な勇気に期待することではなく、お互いが素直に『助けて』と言い合える環境、少数意見や弱みが守られる文化、あるいは互いの心を省みることができるリフレクティブな人間関係を、システムの中にどう組み込んでいくべきか」
+                この「環境の設計」という実践的な問いに対する答えを、皆さんのこれからの多様な大学生活、および専門分野の学びのなかで、自らの手で探究し続けてみてください。
+            </p>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 確認テスト＆感想フォーム（設問2問固定の仕様に準拠） -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-indigo-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">確認テスト</span>
+                第6回 理解度確認・感想の提出
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                <!-- 学籍番号入力 -->
+                <div>
+                    <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                    <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                           class="w-full sm:w-64 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-slate-800">
+                </div>
+
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】幼児期健忘（3歳以前の記憶が大人になると思い出せなくなる現象）が生じる発達心理学的な最大の理由として、本講義の文脈から最も適切な説明はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">A) 乳児期には脳の記憶システムが一切駆動しておらず、知覚情報を一時的に登録することすら物理的に不可能だから。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">B) 出来事を「これは『私』の経験なのだ」として一貫した人生の物語に綴じるための前提となる、「客観的な自己概念（自己イメージ）」がまだ明確に誕生していないため。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">C) 生後3ヶ月のハンドリガードの時点で身体的自己の発見に失敗し、自他分離のステップが永久に停止してしまうから。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">D) 3歳未満の乳幼児は、共同注視や社会的参照といった他者の表情から状況を予測する行動を全く行わないから。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】ルージュのテスト（鏡映像自己認知実験）やチンパンジーの隔離実験のデータから導き出される、自己概念の発達に関する最も重要な心理学的結論はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">A) 「自分」という客観的な自己イメージは、他者との交流や関わりが一切存在しない完全な孤立環境のなかでこそ最も健全に確立される。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">B) 子どもは生後3ヶ月の時点で鏡の中の自分を完全に認識しており、2歳頃に見られる行動変化は単なる偶然の現れにすぎない。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">C) 不安定な愛着スタイルに基づくシャットダウンや試し行動は個人の人格的な致命傷であり、後天的に書き換えることは不可能である。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">D) 確固たる「自己イメージ」を形成し、自分という存在を客観的に認知するためには、自らを映し出す鏡（媒介）としての「他者の存在」が絶対に不可欠である。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 感想・質問 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">講義の感想・質問（自由記述）</label>
+                    <textarea id="student_feedback" rows="4" required placeholder="今回の講義を通じて考えたことや、自身の専門分野（医療・保育・ビジネス等）の現場にどう活かせるかなど、自由に記述してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        回答を送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- ページ個別スクリプト：自動採点と共通モジュールの結合 -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const classNum = "class_06"; // 第6回固定値
+            const studentId = document.getElementById("student_id").value;
+            const feedback = document.getElementById("student_feedback").value;
+            const btn = document.getElementById("submit_btn");
+
+            // クイズの自動採点
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "B") scoreCount++;
+            if (q2Answer === "D") scoreCount++;
+
+            const finalScore = `${scoreCount} / 2`;
+
+            // 共通送信関数を呼び出し（アドレス非公開・非同期通信仕様）
+            if (window.sendSharedMail) {
+                window.sendSharedMail(classNum, studentId, finalScore, feedback, btn);
+            } else {
+                alert("エラー：共通送信モジュール（mail-sender.js）が読み込まれていません。ファイルの配置状況を確認してください。");
+            }
+        }
+    </script>
 </body>
 </html>
