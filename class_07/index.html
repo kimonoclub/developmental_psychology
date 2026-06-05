@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータルの全体スキャナーが自動収集・クレンジングするタイトルタグ -->
+    <title>発達心理学：愛着（アタッチメント）の心理学：絆の歴史的変遷、その臨床的ダイナミクスから生涯発達における回復可能性まで</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- 共通メール送信JSモジュールの読み込み（相対パス・アドレス非表示仕様） -->
+    <script src="../js/mail-sender.js"></script>
+    <style>
+        /* 学術的気品を表現するハイライト装飾 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- ヘッダー・ナビゲーション -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-950 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold tracking-wider text-sm sm:text-base">発達心理学 ビジュアル副読本</span>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-indigo-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第7回 講義資料</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                愛着（アタッチメント）の心理学<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">絆の歴史的変遷、その臨床的ダイナミクスから生涯発達における回復可能性まで</span>
+            </h1>
+            <div class="w-16 h-1 bg-indigo-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- イントロダクション -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-indigo-50 to-slate-50">
+                <h3 class="text-base sm:text-lg font-bold text-indigo-950 mb-3">イントロダクション：私たちが他者と生きるための「見えない基盤」</h3>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                    現代社会を生きる私たちは、日々、多様で複雑な対人関係のネットワークの中で暮らしています。友人、家族、恋人、あるいは将来皆さんが赴くことになる医療・保育・ビジネスの現場における同僚やクライエントたち――。これらの人々に対して、私たちは時に素直に頼ることができ、時に「拒絶されるのではないか」と強い不安を抱き、あるいは「最初から一人でいる方が安全だ」と親密さを避けてしまうことがあります。
+                </p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                    なぜ、人間は他者との距離の取り方にこれほど多様な「個人差」を示すのでしょうか。また、その個人差は一体いつ、どのような環境の中で形作られるのでしょうか。心理学における発達的アプローチは、この根源的な問いに対して<strong class="highlight">「愛着（アタッチメント：Attachment）」</strong>という極めて強力な概念を提示してきました。愛着とは、特定の他者との間に形成される、時間的・空間的に持続する情動的（エモーショナル）な深い絆のことです。
+                </p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed text-justified">
+                    本稿では、この概念が辿ってきた研究歴史を紐解きながら、愛着がいかにして人間の対人関係の基礎（プロトタイプ）となるのかを解説します。そして同時に、「乳児期の経験がすべてを決定し、その後の人生は取り返しがつかない」という過度な決定論的誤解を科学的に修正し、人間の心がいかに柔軟に変容・修正可能なものであるかという「生涯発達における回復可能性」について、緻密な統計的・理論的視座から探求していきます。
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. 愛着理論の黎明と「ホスピタリズムの悲劇」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                1. 愛着理論の黎明と「ホスピタリズムの悲劇」
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">衛生と栄養だけでは満たされない生命の要件</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                20世紀前半まで、医学や社会福祉の世界では「子どもを健康に育てるためには、身体的な衛生環境の維持と、十分な栄養補給（カロリー計算）こそが絶対条件である」と考えられていました。病原菌を排除するための清潔なベッド、割て定時になされる正確な哺乳さえあれば、乳幼児は問題なく成長するはずだと信じ込まれていたのです。しかし、この「物質的・身体的ケア至上主義」は、のちに歴史的な大悲劇を招くことになります。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                第二次世界大戦の前後、ヨーロッパを中心に多くの近代的乳児施設が作られました。これらの施設は、当時の最新医学に基づいて厳格に衛生管理され、栄養価の高い粉ミルクが計算通りに提供されていました。それにもかかわらず、乳児たちの間に深刻な現象が多発し始めたのです。子どもたちは、十分なミルクを与えられているにもかかわらず体重が増えなくなり、表情が乏しくなって発達が著しく遅れていきました。さらに免疫力が極端に低下し、環境は極めて清潔に保たれているにもかかわらず、非常に高い確率で子どもたちが次々と亡くなってしまうという事態が発生したのです。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">ルネ・スピッツによる臨床的発見</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                1940年代、精神分析家であったルネ・スピッツ（René Spitz）は、この現象を調査し<strong class="highlight">「ホスピタリズム（施設病）」</strong>として報告しました。スピッツが目にしたのは、清潔なベッドに隔離され、1人の看護師が事務的・機械的にお世話をこなすだけの空間でした。そこには、1人の赤ちゃんをじっと見つめ、優しく抱き上げ、語りかけるような「特定の大人」との相互交渉が完全に欠落していたのです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                スピッツは、母親（または特定の養育者）から長期間にわたって引き離され、情動的なケアを受けられなかった乳児が、完全な無反応・無気力状態に陥るプロセスを記録し、これを「アナクリティック・ディプレッション（依存性抑うつ）」と名付けました。彼の発見は、「人間が発達していくためには、物理的なケア（清潔さや栄養）だけでは絶対に不十分であり、抱っこや語りかけといった『特定の大人との精神的な絆（愛着）』が、酸素や水と同じレベルで生存に不可欠な要件である」という驚くべき真実を証明したのです。
+            </p>
+        </section>
+
+        <!-- コラム1：生態学的システム理論 -->
+        <section class="mb-16 bg-gradient-to-br from-slate-900 to-indigo-950 text-slate-100 p-6 sm:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg sm:text-xl font-bold text-amber-400 border-b border-slate-700 pb-3 mb-6 flex items-center">
+                <span class="mr-2">💡</span> 精緻化リハーサル・コラム：歴史の変動とブロンフェンブレンナーの生態学的システム理論
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified">
+                近年の発達心理学において、ウリー・ブロンフェンブレンナー（Urie Bronfenbrenner）は、人間の発達や行動を、個人を取り巻く複数の環境システムの動的な相互作用として捉える「生態学的システム理論（Ecological Systems Theory）」を提唱しました。
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified mt-4">
+                子どもを取り巻く直接的な「家族や施設（マイクロシステム）」、それらの環境同士のつながり（メゾシステム）、本人が直接属さないが影響を及ぼす「社会制度や福祉政策（エクソシステム）」、 Red して国全体の「文化的価値観や時代背景（マクロシステム）」、さらにそれらの歴史的変化（クロノシステム）が、重層的に絡み合って一人の人間の生命維持や行動を規定します。
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified mt-4">
+                「悪い人だから悪い行動をした」という安易な人格特性論に帰せあわせず、<strong class="text-amber-300">「個人と環境の多層的な相互作用」</strong>として人間の命の条件を捉え直すことが、現代心理学の重要な視座なのです。
+            </p>
+        </section>
+
+        <!-- 2. 愛着理論の確立と「内的ワーキングモデル」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                2. 愛着理論の確立と「内的ワーキングモデル」
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">ジョン・ボウルビィによる「内的ワーキングモデル」の提唱</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                スピッツらの発見を受け、1950年代から1970年代にかけて愛着理論を体系化したのが、イギリスの児童精神医学者ジョン・ボウルビィ（John Bowlby）です。ボウルビィは、愛着を単なるミルクへの付随的反応ではなく、哺乳類が外敵から身を守り生存するために進化の過程で脳に組み込んってきた『先天的かつ適応的な行動システム』として定義しました。彼の理論の核心は、乳児期に特定の保護者との間で結ばれた反復的な相互交渉が、子どもの脳内に心理的な構造として沈殿していくという「内面化」のプロセスにあります。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                ボウルビィは、この内面化された認知的な地図を<strong class="highlight">「内的ワーキングモデル（Internal Working Model: IWM）」</strong>と命名しました。これは、その後のすべての人間関係を予測し、解釈するための「心の自動フィルター（プロトタイプ）」として機能します。この内的ワーキングモデルは、主に以下の2つの次元（モデル）の掛け合わせによって構成されています。
+            </p>
+
+            <div class="bg-white border border-slate-200 rounded-xl p-6 my-6 shadow-sm space-y-4">
+                <p class="text-slate-700"><strong class="text-indigo-900">他者モデル：</strong> 「自分が困ったとき、他者は拒絶せずに助けてくれる存在か？（他者は信頼に足るか？）」という、世界に対する信頼の認知構造。</p>
+                <p class="text-slate-700"><strong class="text-indigo-900">自己モデル：</strong> 「自分は他者から助けてもらい、大切にされる価値のある存在か？（自分には愛される資格があるか？）」という、自尊感情の認知構造。</p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                乳児が泣いたとき、養育者がすぐに駆けつけ、適切に不快感を取り除くという経験が繰り返されると、「世界は安全であり、他者は信頼できる（他者＋）。そして自分には助けてもらう価値がある（自己＋）」というポジティブな内的ワーキングモデルが構築されます。逆に、泣いても完全に無視されたり、虐待的な対応をされたりすると、「世界は不気味で他者は信じられない（他者ー）。自分には大切にされる価値がない（自己ー）」という歪んだフィルターが形成されてしまうのです。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">統計的論理で見る「内的信頼」の効果：環境の予測可能性</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                内的ワーキングモデルは、成長後の子どもの行動制御能力を劇的に変えることが実験で検証されています。例えば、子どもの遅延報酬耐性（目先の誘惑を我慢して、後でより大きな報酬を得る力）を測定した実験において、子どもたちを「事前に約束したことを必ず守る、信頼できる大人（信頼条件）」と、「約束を平気で破る大人（不信条件）」のグループにランダムに割り振りました。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                その大人の行動を数回経験させたのち、目の前にお菓子を置き、「大人が戻ってくるまで食べるのを我慢できたら、２倍にしてあげる」と告げて、子どもが我慢できた時間を測定しました。その結果、以下のような劇的な差が観測されたのです。
+            </p>
+
+            <div class="bg-slate-100 border-l-4 border-indigo-600 p-4 my-6 rounded-r-lg space-y-2 text-sm sm:text-base">
+                <p><strong class="text-slate-900">信頼条件（大人が約束を守る環境）：</strong> 子どもが誘惑を我慢できた平均時間は<strong class="text-indigo-700">「約700秒」</strong></p>
+                <p><strong class="text-slate-900">不信条件（大人が約束を破る環境）：</strong> 子どもが誘惑を我慢できた平均時間は<strong class="text-amber-700">「約200秒」</strong></p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                「信頼条件」の子どもたちは、「待っていれば必ず大人が戻ってきて約束を果たしてくれる」という高い予測可能性（他者への信頼）を内に持っているため、安心して目先の欲求を抑制できます。一方で、「不信条件」の子どもたちは、「今すぐ目の前にあるものを手に入れないと、次はないかもしれない」という防衛的かつ合理的な認知が働き、衝動的な行動が促されたのです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified font-medium">
+                数理的な論理で表現するならば、子どもの自己コントロール力は、単なる根性ではなく、我慢の持続時間 ＝ f (環境の予測可能性 × 他者への信頼度) という関数（ファンクション）として表現できる「個人と状況の動的な相互作用」の結果なのです。
+            </p>
+        </section>
+
+        <!-- コラム2：共感の発達 -->
+        <section class="mb-16 bg-gradient-to-br from-slate-900 to-indigo-950 text-slate-100 p-6 sm:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg sm:text-xl font-bold text-amber-400 border-b border-slate-700 pb-3 mb-6 flex items-center">
+                <span class="mr-2">💡</span> 精緻化リハーサル・コラム：算数の「確率・予測」と他者視点取得・共感の発達
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified mb-4">
+                人間の脳は、幼少期の経験から「自分がヘルプ（助け）を求めたとき、相手が応答してくれる確率」を計算しています。発達心理学者マーティン・ホフマン（Martin Hoffman）らが指摘したように、他者の立場に立ってその内面を推し量る能力（他者視点取得）や、相手の痛みを我がことのように感じる力（共感）は、子どもの社会経験とともに洗練されていく重要な発達的機能です。
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justified">
+                乳児期に応答確率が極めて低かった環境で育った子どもにとっては、他者に期待することは「リスクが高く、無駄な投資」になってしまい、自分を守るための<strong class="text-amber-300">防衛的シャットダウン（共感の抑制）</strong>を引き起こしやすくなるのです。
+            </p>
+        </section>
+
+        <!-- 3. 愛着の測定と臨床的障害 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                3. 愛着の測定と臨床的障害
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">メアリー・エインズワースと「ストレンジ・シチュエーション法」</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                ボウルビィの理論を、科学的に観察・測定可能な統制実験へと落とし込んだのが、メアリー・エインズワース（Mary Ainsworth）です。彼女は乳幼児の愛着の「質」を厳密に評価するための実験手続きとして「ストレンジ・シチュエーション法（SSP／見知らぬ状況法）」を開発しました。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                この実験では、母親が一時的に退室して乳児にストレスを与えたのち、「母親が戻ってきた再会の瞬間に、子どもがどのような行動を執るか」に最も注目しました。彼女はこの反応パターンの分析から、子どもの愛着行動を「安定型」「回避型」「アンビバレント型」に明確にタイプ分けしました。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">愛着形成の深刻な破綻がもたらす臨床的障害</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                もし、乳幼児期に著しいネグレクトや不適切な虐待を受け続けた場合、それは重篤な臨床的障害へと発展することがあります。
+            </p>
+
+            <div class="space-y-4 my-6">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-slate-900 mb-1">■ 反応性アタッチメント障害（RAD）</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified">
+                        恐怖や苦痛を感じる状況であっても、養育者に対して一切の慰めや助けを求めようとしません（ヘルプシーキングの完全な崩壊）。他者を「安全基地」として利用することが脳のシステムレベルで不可能になっている状態です。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="font-bold text-slate-900 mb-1">■ 脱抑制性対人交流障害（DSED）</p>
+                    <p class="text-slate-700 text-sm sm:text-base text-justified">
+                        初めて会った見慣れない大人に対しても、全く警戒心を見せることなく初対面から自ら近づき、過剰になれなれしい態度で交流しようとします。誰に対しても等距離で無差別にしがみついてしまう、愛着の深刻な歪みなのです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 成人の愛着スタイルと「防衛戦略」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                4. 成人の愛着スタイルと「防衛戦略」
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">バーソロミューによる成人の4つの愛着スタイル</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                メアリー・メイン（Mary Main）による「成人愛着面接（AAI）」の開発などを経て、大人が営む恋愛関係や職場の対人関係のパターンは、幼児期の内的ワーキングモデルの「再演」である可能性が示されました。キム・バーソロミュー（Kim Bartholomew）は、内的ワーキングモデルの2次元（自己モデル×他者モデル）から、成人の愛着スタイルを以下の4つに構造化しました。
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="font-bold text-indigo-950">安定型（Secure）</h4>
+                        <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">自己：＋／他者：＋</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        ストレスを感じたとき、素直に他者に「助けて」と言えます（ヘルプシーキング）。他者と親密になりつつも過度な束縛をせず（自他境界の維持）、不満が生じたときも「話し合い」によって建設的に解決しようとします。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="font-bold text-indigo-950">拒嫌・軽視型（Dismissing）</h4>
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">自己：＋／他者：ー</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        「自分は一人でも完全に大丈夫だ」と過剰に自立しようとします。しかし、相手との親密さが増してくると、突然連絡を断つなどシャットダウン（無視や拒絶）を起こします。拒絶されたときの痛みを先回りで回避しようとする脳の「不活性化戦略」です。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="font-bold text-indigo-950">とらわれ型（Preoccupied）</h4>
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">自己：ー／他者：＋</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        過度な承認欲求を抱え、恋人からの返信が5分ないだけで「嫌われた！」と激しい不安（過覚醒）に陥ります。わざと冷たい態度を取って相手が追いかけてくれるかを試そうとする「感情的な試し行動」を行い、共依存に陥りやすい性質があります。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center mb-2">
+                        <h4 class="font-bold text-indigo-950">恐れ型（Fearful）</h4>
+                        <span class="text-xs bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded">自己：ー／他者：ー</span>
+                    </div>
+                    <p class="text-slate-600 text-xs sm:text-sm text-justified">
+                        「誰かと親しくなりたいけれど、近づくと傷つけられるのが怖い」という強烈なジレンマを常に抱えています。親密になりかけると、耐え切れなくなって突然人間関係を自らリセットしてしまう傾向があります。
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">性格の欠点ではない：内的モデルのアップデート</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                これら不安定な愛着スタイルに基づく不器用な行動は、決して人格的な欠点ではなく、<strong class="highlight">「幼少期の過酷な環境を生き延びるために、自らの脳が学習した防衛戦略の名残」</strong>です。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                そして現代の発達心理学において、内的ワーキングモデルは後天的にいくらでも書き換え・修正が可能であることが証明されています。それは、自らの不安を客観視する「メタ認知」、恐怖予測を裏切る現実の「安全なデータの経験（予測エラー）」、およびカウンセラーやパートナーなど「新たな安全基地となる人間関係」を通じて、大人になってからでも<strong class="highlight">「獲得された安定型（Earned Secure）」</strong>へと変容できるのです。
+            </p>
+        </section>
+
+        <!-- 5. 学校教育における「社会化」と道徳性の発達 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                5. 学校教育における「社会化」と道徳性の発達
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                学校生活における集団行動の経験は、人間が他者と協調して生きるための「社会化（Socialization）」という不可欠な発達プロセスです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                一部の学生は、「学校教育は役割への服従を叩き込み、個人の主体性を奪う場所なのだ」とネガティブに誤解してしまうことがあります。しかし、発達心理学的にはそれは間違いです。学校は単に「服従」を教える場所ではなく、協力、共感、規範の理解、および民主的討論などを総合的に学ぶ、豊かな社会化の空間です。「役割を全うしようとする責任感」という人間が持つ素晴らしい社会化の能力そのものが、文脈や環境設計によって、社会を支える「建設的な力」にもなれば、盲従を生む「破壊的な力」にもなり得る、すなわち<strong class="highlight">「同じ能力が文脈によって建設的にも破壊的にも働く」</strong>のです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                ジャン・ピアジェ（Jean Piaget）は、子どもは最初、大人のルールに盲目的に従う「他律的道徳」の段階にありますが、仲間との対等な相互作用や話し合いを経験していく中で、ルールを状況に応じて変更可能なものと捉える「自律的道徳」の段階へと発達していくことを示しました。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified">
+                私たちは生まれながらに権威を批判できるわけではありません。子どもはまず大人の指示に従うことを学び、その後にルールの意味や他者の視点を理解しながら、自律的な判断力を発達させていきます。命令に盲従せず、おかしいことに対して「従わない」と言える批判的思考力は、長い発達の過程で育まれる、高度な認知的・社会的能力なのです。
+            </p>
+        </section>
+
+        <!-- 6. 虐待の世代間連鎖とその克服 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                6. 虐待の世代間連鎖とその克服（リフレクティブ・ファンクション）
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">カウフマンとジグラーの研究が示す希望のデータ</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                親自身がポジティブな内的ワーキングモデルを持っていない場合、わが子の泣き声に脳が過剰なストレス反応を起こしてしまい、不適切な養育（虐待）を無意識に再演しやすくなります。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                しかし、心理学者ジェイ・カウフマン（Jay Kaufman）とエドワード・ジグラー（Edward Zigler）らが、これまでの膨大な研究をメタ分析的にまとめた結果、世界中に強い希望を与える統計的真実が明らかになりました。「幼少期に激しい虐待を受けて育った人が、自らが親になったとき、自分の子どもに対して再び虐待を繰り返してしまう割合（連鎖率）」は、宿命論的な偏見を覆し、わずか<strong class="highlight">「25%」</strong>だったのです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                これは逆に言えば、残りの<strong class="highlight">「75%」もの圧倒的多数の人々は、自らの代でその負の連鎖を完璧に断ち切り</strong>、我が子には安定した愛着を注いでいるという動かしがたい科学的現実です。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">連鎖を断ち切る鍵：「リフレクティブ・ファンクション」</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                負の連鎖を断ち切った75%の人々を分かつ「決定的な心理学的変数」とは、<strong class="highlight">「リフレクティブ・ファンクション（Reflective Function: RF／リフレクション力・省察機能）」</strong>という認知能力です。これは、「自分と相手の行動の背後にある『目に見えない心（感情・意図・信念・欲求）』を想像し、適切にくみ取り、省みる力」のことです。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                このリフレクション力が高い人は、子どもが泣き叫んだとき、表面的な行動だけで白黒はっきりつける（決めつける）見方をしません。一歩立ち止まって、「この子は今、言葉にできない恐怖や眠気を感じているのかもしれない」と子どもの心を推し量ると同時に、「今、自分がこれほど激昂しているのは、子どものせいだけでなく、職場での疲れが残っているからだな」と、自らの内面をも多面的に客観視することができます。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified">
+                発達心理学において、心理学者や社会科学者は、一つの結果を一つの原因だけで説明しようとする「単一原因論」を排斥します。非行が貧困（経済）だけでも、発達特性（個人）だけでも説明できないのと同様です。物事の見方は、固定されたものではなく、人間関係の相互作用の中で決まっていきます。人間は、自らの心を省みる力（リフレクション）によって、過去の傷を乗り越え、次の世代の環境をより善いものへとデザインし直すことができる、極めて主体性に満ちた存在なのです。
+            </p>
+        </section>
+
+        <!-- 7. 最終的な問い -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">
+                7. 最終的な問い：私たちは「状況」のなかにどう環境を設計するか
+            </h2>
+            
+            <h3 class="text-lg font-bold text-slate-800 mt-6 mb-3">「心理的安全性」の厳密な定義と環境設計</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                社会的な暴走や過酷な連鎖を防ぐための「環境設計」の重要性は、大人の組織や集団のあり方を考える上でも全く同じです。エイミー・エドモンドソン（Amy Edmondson）が提唱した「心理的安全性（Psychological Safety）」は、非常に重要な環境変数です。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                ここで決して誤解してほしくないのは、心理的安全性とは「何を言っても許されるぬるい仲良し集団」という意味ではないという点です。本来の定義は、<strong class="highlight">「組織の中で対人リスクを取っても、不利益を被ったり罰せられたりしないという確信が共有されている状態」</strong>を指します。つまり、心理的安全性とは「何を言っても良い」という意味ではなく、「異論や懸念を表明しても不利益を受けにくい状態」を指すのです。このような「環境の設計」があって初めて、個人は孤立や盲従のリスクを乗り越え、自律的な発言を行うことができます。
+            </p>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">結びにかえて：個人×環境の相互作用モデル</h3>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                人は状況や過去の環境の影響を強く受けます。しかし、人は状況にただ受動的に反応するだけのロボットのような存在でもありません。だからこそ私たちは、経験から学び、自分自身を育てる（発達させる）ことも、より良い状況を社会の中に設計することもできるのです。この「個人×環境」のダイナミックな相互作用モデルこそが、現代の発達心理学が提示する人間観の核心です。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                発達心理学の研究では、人は生まれながらに善人でも悪人でもなく、他者との関わりや教育、社会経験を通して判断力や共感性を発達させてしていく存在だと考えられています。私たちの行動は状況の影響を受けます。しかし同時に、私たちは経験から学び、自らを変え、環境を変える力も持っています。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                心理学は、人間の弱さを暴いて絶望する学問ではありません。人間がより善く振る舞える発達的・環境的条件を発見し、それを社会のシステムの中に実装していくための学問です。「過去のせいで自分がこうなった」「環境がすべてを決める」という単一原因論の檻を飛び越えて、皆さんはぜひ、これから自分自身が赴く現場を想像しながら考えてみてください。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified font-medium text-indigo-950 bg-indigo-50 p-4 rounded-xl border border-indigo-100">
+                「人は状況に影響される。だからこそ重要なのは、英雄的な個人を期待することではなく、異議申し立てができる制度、少数意見が守られる文化、あるいは互いの心を省みることができるリフレクティブな人間関係を、システムの中にどう組み込んでいくべきか」
+                この「環境の設計」という実践的な問いに対する答えを、皆さんのこれからの大学生活、そして専門分野の学びのなかで、自らの手で探究し続けてみてください。
+            </p>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 確認テスト＆感想フォーム（設問2問固定の仕様準拠） -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-indigo-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">確認テスト</span>
+                第7回 理解度確認・感想の提出
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                <!-- 学籍番号入力 -->
+                <div>
+                    <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                    <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                           class="w-full sm:w-64 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-slate-800">
+                </div>
+
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】学校教育における「社会化」のプロセスと道徳性の発達に関する記述として、発達心理学の見地から最も適切な説明はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">A) 学校教育は子どもたちに「他律的道徳」にのみ留まることを強制する場所であり、その結果として、個人の自律的な判断力の発達は生涯にわたって完全に阻害される。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">B) 学校教育における社会化は単に「服従」を教える場所ではなく、協力や共感、民主等討論をも含む。人間が身につけた「役割を全うしようとする責任感」という能力そのものが、置かれた文脈や環境によって建設的にも破壊的にも働く。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">C) ピアジェの「自律的道徳」の段階に達した子どもは、社会のルールや他者との合意形成の必要性を完全に無視し、自己モデルのみを肥大化させて利己的に行動するようになる。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">D) コールバーグの道徳発達理論における最高段階とは、いかなる場合であっても、専門的な権威による指示に対して、一切の疑念を持たずに絶対服従する状態を指す。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】組織や集団の暴走を防ぐための環境設計として重要とされる、エイミー・エドモンドソンの定義に基づく「心理的安全性」の正確な説明はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">A) 組織のメンバー全員が傷つけ合わないように配慮し、お互いのミスや危険な行動、ルールの逸脱に対しても一切批判をしない「仲良し集団」を維持しているぬるい状態。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">B) 組織の絶対的なリーダーが提示した大義名分に対して、一言も反論せずに全員のアイデンティティを完全に同調させている他律的な状態。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">C) 組織内において、「何を言っても良い」と自分勝手に振る舞うことではなく、「異論や懸念を表明しても、組織内で不利益や罰を受けにくい状態」のこと。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-indigo-600 focus:ring-indigo-500">
+                            <span class="text-slate-700">D) 教師役と生徒役の間に頑丈な遮蔽物を設置することにより、他者の苦痛を直接感じないように配慮された、認知的シャットアウト（心理的距離）が保障されている環境。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 感想・質問 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">講義の感想・質問（自由記述）</label>
+                    <textarea id="student_feedback" rows="4" required placeholder="今回の講義を通じて考えたことや、自身の専門分野（医療・保育・ビジネス等）の現場にどう活かせるかなど、自由に記述してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        回答を送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- ページ個別スクリプト：自動採点と共通モジュールの結合 -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const classNum = "class_07"; // 第7回固定値
+            const studentId = document.getElementById("student_id").value;
+            const feedback = document.getElementById("student_feedback").value;
+            const btn = document.getElementById("submit_btn");
+
+            // クイズの自動採点
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "B") scoreCount++;
+            if (q2Answer === "C") scoreCount++;
+
+            const finalScore = `${scoreCount} / 2`;
+
+            // 共通送信関数を呼び出し（アドレス非公開・非同期通信）
+            if (window.sendSharedMail) {
+                window.sendSharedMail(classNum, studentId, finalScore, feedback, btn);
+            } else {
+                alert("エラー：共通送信モジュール（mail-sender.js）が読み込まれていません。ファイルの配置を確認してください。");
+            }
+        }
+    </script>
+</body>
+</html>
