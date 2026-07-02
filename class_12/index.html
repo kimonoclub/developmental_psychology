@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>発達心理学 第11回 講義資料</title>
+    <style>
+        /* ページ全体の基本設定 */
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+                font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+                font-size: 9pt;
+                color: #718096;
+            }
+            @bottom-left {
+                content: "発達心理学 第11回 講義資料";
+                font-family: 'Hiragino Mincho ProN', 'BIZ UDMincho', 'Yu Mincho', serif;
+                font-size: 9pt;
+                color: #718096;
+            }
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Hiragino Mincho ProN', 'BIZ UDMincho', 'Yu Mincho', serif;
+            font-size: 11pt;
+            line-height: 1.85;
+            color: #2d3748;
+            background-color: #ffffff;
+            -webkit-print-color-adjust: exact;
+        }
+
+        /* 講義ヘッダーエリア */
+        .lecture-header {
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 8px;
+            margin-bottom: 40px;
+            display: table;
+            width: 100%;
+        }
+
+        .lecture-meta {
+            display: table-cell;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            font-size: 10pt;
+            color: #4a5568;
+            vertical-align: bottom;
+        }
+
+        .lecture-title-sub {
+            display: table-cell;
+            text-align: right;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            font-size: 11pt;
+            font-weight: bold;
+            color: #1a365d;
+            vertical-align: bottom;
+            letter-spacing: 0.1em;
+        }
+
+        /* タイトル */
+        h1.main-title {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #1a365d;
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 45px;
+            letter-spacing: 0.03em;
+            font-family: 'Hiragino Mincho ProN', 'BIZ UDMincho', serif;
+        }
+
+        /* セクション見出し H2 */
+        h2.section-title {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'BIZ UDGothic', sans-serif;
+            font-size: 14pt;
+            color: #1a365d;
+            border-left: 5px solid #2b6cb0;
+            padding-left: 12px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+            page-break-after: avoid;
+        }
+
+        /* 本文パラグラフ */
+        p {
+            margin-top: 0;
+            margin-bottom: 18px;
+            text-align: justify;
+            letter-spacing: 0.02em;
+        }
+
+        p strong {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'BIZ UDGothic', sans-serif;
+            color: #1a365d;
+            background: linear-gradient(transparent 70%, #ebf8ff 70%, #ebf8ff 100%);
+            padding: 0 2px;
+        }
+
+        /* 箇条書き */
+        ul.factor-list {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+
+        ul.factor-list li {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'BIZ UDGothic', sans-serif;
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 8px;
+            list-style-type: square;
+        }
+
+        /* 思考・発言の引用ボックス */
+        blockquote.quote-box {
+            margin: 24px 0;
+            padding: 16px 20px;
+            background-color: #f7fafc;
+            border-left: 4px solid #718096;
+            border-radius: 0 4px 4px 0;
+            page-break-inside: avoid;
+        }
+
+        blockquote.quote-box p {
+            font-family: 'Hiragino Mincho ProN', 'BIZ UDMincho', serif;
+            font-size: 10.5pt;
+            color: #4a5568;
+            margin: 0 0 8px 0;
+            font-style: italic;
+        }
+
+        blockquote.quote-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* キーメッセージのハイライト（バンデューラ拡張部分など） */
+        .highlight-banner {
+            margin: 35px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            border-radius: 6px;
+            text-align: center;
+            page-break-inside: avoid;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .highlight-banner .message {
+            font-family: 'Hiragino Mincho ProN', 'BIZ UDMincho', serif;
+            font-size: 14pt;
+            font-weight: bold;
+            color: #102a43;
+            line-height: 1.6;
+            margin: 0;
+            letter-spacing: 0.05em;
+        }
+
+        /* 結び・補足セクション */
+        .closing-section {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px dashed #cbd5e0;
+        }
+
+        .closing-title {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            font-size: 12pt;
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 15px;
+            page-break-after: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 講義ヘッダー -->
+    <div class="lecture-header">
+        <div class="lecture-meta">発達心理学 I &nbsp;|&nbsp; 講義補助資料</div>
+        <div class="lecture-title-sub">第11回</div>
+    </div>
+
+    <!-- メインタイトル -->
+    <h1 class="main-title">発達心理学：過去の支配から自由になる瞬間とは</h1>
+
+    <!-- 第1節 -->
+    <h2 class="section-title">1. リベットの実験（前回の復習）と本講義の問い</h2>
+    <p>前回の授業では、ベンジャミン・リベットの有名な脳科学の実験を紹介しました。欠席した人のために簡単に振り返っておきましょう。</p>
+    <p>リベットの実験は、「単純な運動課題では、私たちが『動こう』と意識する約0.35秒前に、すでに脳内では準備電位（運動のための無意識の指令）が観察された」という衝撃的なものでした。ただし、この結果が直ちに「人間に自由意志は存在しない」ことを意味するかについては、現在も活発な議論が続いています。またリベット自身は、意識が芽生えてから実際に筋肉が動くまでの約0.2秒の間に、行動を取りやめる（Free Won't：自由な拒否権）可能性が残されていると考えました。</p>
+    <p>なお、本資料は「自由意志が存在するかどうか」という哲学的問題に結論を与えるものではありません。ここでは、<strong>「人はどのような条件のもとで自らを変えていけるのか」</strong>という発達心理学の問いとして考えてみたいと思います。</p>
+
+    <!-- 第2節 -->
+    <h2 class="section-title">2. 決定論としての極端な解釈</h2>
+    <p>さて、このリベットの実験を極端に解釈してみましょう。</p>
+    <p>もしすべての行動の起点が無意識下で自動的に始まっているのだとしたら、私たちのあらゆる振る舞いは、</p>
+    
+    <ul class="factor-list">
+        <li>遺伝</li>
+        <li>気質</li>
+        <li>過去の経験</li>
+        <li>現在の脳状態</li>
+    </ul>
+    
+    <p>これらによって完全に決定されていることになります。「今の自分から変わりたい」と思うことでさえも、実は過去の経験や現在の脳状態が弾き出した「自動的な延長（プログラム）」に過ぎないのではないか。これは決定論として、非常に一貫しています。</p>
+
+    <!-- 第3節 -->
+    <h2 class="section-title">3. 人間が持つ奇妙な能力：「メタ認知」</h2>
+    <p>しかし、人間にはこの決定論的なプログラムに対する、一つ奇妙な能力が備わっています。それは「自分自身を対象化する能力」です。</p>
+    <p>例えば、何かトラブルがあったとします。</p>
+
+    <blockquote class="quote-box">
+        <p>「私はまた怒ってしまった。」</p>
+    </blockquote>
+
+    <p>これは、これまで形成されてきた認知や感情のパターンに沿った、半ば自動的な反応です。しかし人間は、ここから視点を一段階引き上げることができます。</p>
+
+    <blockquote class="quote-box">
+        <p>「私は、怒りやすい人間なんだな。」</p>
+        <p>「私は、なぜ怒りやすいのだろう。」</p>
+        <p>「怒らない人は、どう考えているのだろう。」</p>
+    </blockquote>
+
+    <p>こうやって、自分自身を「観察対象」にしてしまうのです。心理学では、このように自分の思考や感情を対象として捉える働きを「メタ認知」と呼びます。類人猿や一部の鳥類などにもその萌芽は見られますが、人間において特に高度に発達している能力です。</p>
+    <p>この「メタ認知」が起きた瞬間、人は<strong>主観的には</strong>、あたかも自分自身を一歩引いた立場から眺められるようになります。過去の事実（初期設定）そのものは決して変わりません。しかし、「その設定とどう付き合うか」という解釈と操作の権限を取り戻すことで、「過去の支配のされ方」が変わるのです。</p>
+
+    <!-- 第4節 -->
+    <h2 class="section-title">4. 新しい可能性を見いだす瞬間と「可能自己（Possible Selves）」</h2>
+    <p>では、私たちが過去の延長線から抜け出し、過去の影響だけに目を向けていては見落としてしまうような「新しい可能性」を見いだす瞬間があるとすれば、それはいつなのでしょうか。</p>
+    <p>ここでは、その一つの答えとして、「別の未来を想像できた瞬間」を考えてみたいと思います。</p>
+    <p>心理学者のヘーゼル・マーカス（Hazel Markus）らは、「Possible Selves（可能自己）」という概念を提唱しました。人間は現在の自分だけでなく、「将来なりたい自分」「なるかもしれない自分」、あるいは「絶対になりたくない自分」のイメージを頭の中で構成し、それが現在の行動を変える強力な動機づけになるという理論です。</p>
+    <p>つまり、人は過去という「原因」に後ろから押し出されるだけでなく、想像した未来のモデル（目的）へと前から「引っ張られる」ことによって、人生の軌道を変えることができるのです。もちろん、その未来像がそのまま実現するとは限りません。しかし、「別の自分もあり得る」という想像そのものが、<strong>現在の行動を方向づける心理的資源</strong>になると考えられています。</p>
+
+    <!-- 第5節 -->
+    <h2 class="section-title">5. 他者を通して未来を発見する</h2>
+    <p>では、その「別の未来」はどうやって手に入るのでしょうか。それは、個人の孤独な空想からではなく、「他者との出会い（観察）」によってもたらされます。</p>
+    <p>例えば、ずっと暴力的な家庭環境で育り、それ以外の世界を知らなかった人がいるとします。その人が、ある教師に出会い、こう思います。</p>
+
+    <blockquote class="quote-box">
+        <p>「こんな大人もいるんだ。」</p>
+    </blockquote>
+
+    <p>この瞬間、その人の現现实はまだ何も変わっていません。しかし、頭の中の「未来のモデル」が一つ増えています。その瞬間から、少なくとも本人の主観から見れば、未来に複数の選択肢が開けたように感じられるのです。</p>
+    <p>ここで、アルバート・バンデューラ（Albert Bandura）の「観察学習」が生きてきます。バンデューラは「他人の行動を見るだけで、人は学習する」と言いました。私はそれを少し広げて、こう言いたいと思います。</p>
+
+    <div class="highlight-banner">
+        <p class="message">「他人を見ることで、人は未来を発見する」</p>
+    </div>
+
+    <p>その教師は、直接何かを指導したわけではありません。ただそこに存在することで、「こういう人間のバリエーションも存在する」という未来のカタログの新しいページを開いて見せたのです。</p>
+    <p>私たちが誰かと出会い、関わり合うことの意味。それは、発達は個人だけで完完結するものではなく、他者との関係性の中で進んでいくという、<strong>発達心理学が重視してきた考え方の一つとも深く重なっています。</strong></p>
+    <p>私たちは、誰かから学ぶ存在であると同時に、知らないうちに誰かの学びの対象にもなっています。皆さんも、誰かの未来のカタログの1ページになる可能性があるということを、ぜひ覚えておいてください。</p>
+
+    <!-- 結び -->
+    <div class="closing-section">
+        <div class="closing-title">結びに代えて</div>
+        <p>自由意志が存在するかどうかという問いは、今も哲学や神経科学の大きな論争です。しかし発達心理学が私たちに教えてくれるのは、その答えを待たなくても、人は他者との出会いや新しい経験を通して、自分の生き方を少しずつ変えていけるということです。</p>
+    </div>
+
+</body>
+</html>
