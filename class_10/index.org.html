@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータルの自動スキャナーが収集・クレンジングするタイトルタグ -->
+    <title>発達心理学：第10回 幸せの心理学：目標（目的）の発達メカニズム（フォローアップ・学習テキスト）</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- 数式を確実に自動レンダリングさせるための MathJax 設定と CDN -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                matchFontHeight: false
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady().then(() => {
+                        console.log('MathJax initial typesetting complete');
+                    });
+                }
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        /* 学術的気品を表現するハイライト装飾 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- 講義ヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p id="subject_label" class="text-xs font-bold text-teal-300 uppercase tracking-wider">発達心理学</p>
+                <h1 id="lecture_title" class="text-sm sm:text-base font-bold text-white mt-0.5">第10回：幸せの心理学：目標（目的）の発達メカニズム</h1>
+            </div>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-teal-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第10回 フォローアップ・学習テキスト</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                幸せの心理学：目標（目的）の発達メカニズム<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">―人生という旅路において、人は何を目標とし、どのようにその意味を変えていくのか―</span>
+            </h1>
+            <div class="w-16 h-1 bg-teal-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- プロローグ：言葉の魔法と「遠いゴール」の罠 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                プロローグ：言葉の魔法と「遠いゴール」の罠
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                人生という名の旅に出るとき、私たちは誰しも「どこへ向かえばよいのだろう」という問いを抱えます[cite: 1]。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                幼い頃、周りの大人たちはよく「結果は気にしなくていいから、とにかくベストを尽くしなさい！」と声をかけてくれました[cite: 1]。一見すると温かいこの励ましは、実は旅人を迷子にさせてしまう罠をはらんでいます[cite: 1]。
+            </p>
+
+            <div class="bg-white border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3 mb-6 shadow-sm">
+                <p class="font-bold text-teal-950">🚚 ロックとレイサムの目標設定理論[cite: 1]</p>
+                <p class="text-slate-700 text-justified">
+                    トラックの運転手に「できるだけ多く積んでくれ（ベストを尽くせ）」と頼むよりも、<strong class="highlight">「最大積載量の94%を的確に狙って積んでくれ」</strong>と具体的な数値を提示したときの方が、人々は飛躍的に高い成果を上げました[cite: 1]。
+                </p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified">
+                「頑張れ」という曖昧な言葉は、ときに集中すべき対象を見失わせ、パフォーマンスを下げてしまうことがあります[cite: 1]。人が前に進むためにまず必要なのは、「何を目指し、何に集中するか」という明確な目標の道標なのです[cite: 1]。
+            </p>
+        </section>
+
+        <!-- 第1幕：歩みを進める「3つのエンジン」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                第1幕：歩みを進める「3つのエンジン」
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                私たちが目標に向かって歩み出すとき、その背後には異なる「心のエンジン（動機づけ）」が存在します[cite: 1]。
+            </p>
+
+            <div class="space-y-4 text-sm sm:text-base mb-6">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🌱 1. 学習目標（内発的動機づけ）[cite: 1]</p>
+                    <p class="text-slate-700">「新しい自分に変わりたい」「このスキルを自分のものにしたい」と、学びや成長そのものを楽しむエンジンです[cite: 1]。</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🏆 2. 遂行接近目標（外発的動機づけ）[cite: 1]</p>
+                    <p class="text-slate-700">「他者よりも良い成績を取り、自分の優秀さを証明したい」と、勝利や称賛を目指すエンジンです[cite: 1]。</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-rose-900 mb-1">🛡️ 3. 遂行回避目標[cite: 1]</p>
+                    <p class="text-slate-700">「失敗して、周囲から無能だと思われるのを避けたい」と、恐れから逃れるためのエンジンです[cite: 1]。</p>
+                </div>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified">
+                学習目標であっても、遂行接近目標であっても、人は課題に向かって力強く歩むことができます[cite: 1]。しかし、まだ歩み始めたばかりの未熟な段階で、結果の固定性や他者からの評価ばかりを過剰に押し付けられると、人の心には「遂行回避目標」が芽生え、失敗を恐れるあまり新しい挑戦そのものを拒絶するようになってしまいます[cite: 1]。
+            </p>
+        </section>
+
+        <!-- 第2幕：思春期の嵐と「他者の目」という影 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                第2幕：思春期の嵐と「他者の目」という影
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                子どもから大人へと差し掛かる青年期初期（中学校への進学期）、旅人は大きな試練に直面します[cite: 1]。多くの若者たちが急激に学習意欲を失い、自尊感情（自分に満足し、長所があると感じる感情）を低下させてしまうのです[cite: 1]。
+            </p>
+
+            <div class="bg-white border border-slate-200 p-5 rounded-xl shadow-sm text-xs sm:text-sm space-y-2 mb-6">
+                <p class="font-bold text-teal-950 border-b border-slate-100 pb-1">👻 恐れの対象の発達的変化[cite: 1]</p>
+                <p class="text-slate-700">・<strong>赤ん坊の時期：</strong> 「母親の不在」や「見知らぬ人」[cite: 1]</p>
+                <p class="text-slate-700">・<strong>幼児期：</strong> 「親からの分離」や「怪物・幽霊」[cite: 1]</p>
+                <p class="text-slate-700">・<strong>学童期〜青年期：</strong> 「泥棒」「失敗」、そして「学校のテスト」や「人前で恥をかくこと」[cite: 1]</p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                特に日本の社会では、他人の目を気にしすぎるあまり、「自分が醜いと思い込む（醜貌恐怖）」や「自分が臭いと思い込む（自己臭恐怖）」といった独自の対人不安が生じやすくなります[cite: 1]。常に公然と評価され、失敗すれば見せしめにされるような環境は、本来持っていた内発的な意欲を奪い去る<strong class="highlight">「アンダーマイニング効果」</strong>を若者全体に引き起こしているのかもしれません[cite: 1]。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified">
+                エリクソンの発達段階が示すように、人生の各時期には乗り越えるべき心理的課題が存在します[cite: 1]。この時期の課題は、他者の目や評価の恐怖に呑み込まれず、いかに「自分自身の目標」を取り戻すかにあるのです[cite: 1]。
+            </p>
+        </section>
+
+        <!-- 第3幕：一歩を刻む魔法 ― 進捗の法則と自己効力感 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                第3幕：一歩を刻む魔法 ― 進捗の法則と自己効力感
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                「自分には何もできないかもしれない」という不全感から抜け出すため、心理学者バンデューラとシャンクは、目標の「刻み方」に関する実験を行いました[cite: 1]。
+            </p>
+
+            <div class="bg-teal-50 border border-teal-200 p-5 rounded-xl my-4 text-sm sm:text-base space-y-3">
+                <p class="font-bold text-teal-950">📚 バンデューラ＆シャンクの実験（算数が苦手な子どもたち）[cite: 1]</p>
+                <p class="text-slate-800 text-justified">
+                    ・<strong>遠隔的目標グループ：</strong> 「7日間で、42ページ全部を終わらせよう」[cite: 1]<br>
+                    ・<strong class="text-teal-900">近接的目標グループ：</strong> 「全体は見なくていい。毎日、まずは『6ページずつ』終わらせよう」[cite: 1]
+                </p>
+                <p class="text-xs text-teal-900 font-bold border-t border-teal-200 pt-2">
+                    結果：毎日小さなステップを刻んだ子どもたちの方が、はるかに高い学習成果を上げ、同時に「自分はやればできる」という自己効力感（Self-Efficacy）を高めました[cite: 1]。
+                </p>
+            </div>
+
+            <h3 class="text-lg font-bold text-slate-800 mt-8 mb-3">■ 自己効力感を育む4つの体験[cite: 1]</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm mb-6">
+                <div class="bg-white p-3 rounded-lg border border-slate-200"><strong class="text-teal-900">1. 遂行行動達成：</strong> 小さなステップを自分の手で達成した成功体験[cite: 1]。</div>
+                <div class="bg-white p-3 rounded-lg border border-slate-200"><strong class="text-teal-900">2. 代理経験：</strong> 自分と似た仲間が課題をクリアしていく姿を見ること[cite: 1]。</div>
+                <div class="bg-white p-3 rounded-lg border border-slate-200"><strong class="text-teal-900">3. 言語的説得：</strong> 信頼できる他者から「あなたならできる」と励まされること[cite: 1]。</div>
+                <div class="bg-white p-3 rounded-lg border border-slate-200"><strong class="text-teal-900">4. 生理的情動状態：</strong> 心身がリラックスしていること[cite: 1]。</div>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified font-medium bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                💡 <strong>アマビールの「進捗の法則」：</strong><br>
+                人の意欲と幸福感を最も強力に駆り立てるのは、豪華な賞賛や給与ではなく、<strong class="highlight">「どんなに小さくても、今日、自分が前に進んだという実感が得られること」</strong>です[cite: 1]。今日の一歩を刻むことこそが、旅を続けるエネルギーとなります[cite: 1]。
+            </p>
+        </section>
+
+        <!-- 第4幕：分岐路に立つ旅人 ― 「自分」を選び取る（アイデンティティの確立） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                第4幕：分岐路に立つ旅人 ― 「自分」を選び取る（アイデンティティの確立）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                青年期の中盤、旅人はついに「自分とは何者か」「自分のしたいことと他人が期待することのギャップにどう折り合いをつけるか」というアイデンティティの分岐路に立ちます[cite: 1]。心理学者ジェームズ・マーシャ（James Marcia）は、この時期の状態を「探索（ Crisis ）」と「決定（ Commitment ）」の2軸で4つに分類しました[cite: 1]。
+            </p>
+
+            <!-- マーシャのアイデンティティ4分類表 -->
+            <div class="overflow-x-auto my-6">
+                <table class="w-full text-xs sm:text-sm text-center border-collapse bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200">
+                    <thead class="bg-teal-900 text-white font-bold">
+                        <tr>
+                            <th class="p-3 border-b border-teal-800"></th>
+                            <th class="p-3 border-b border-teal-800">【決定（コミットメント）あり】</th>
+                            <th class="p-3 border-b border-teal-800">【決定（コミットメント）なし】</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                        <tr>
+                            <td class="p-3 font-bold bg-slate-100 border-r border-slate-200">【探索（ crisis ）あり】</td>
+                            <td class="p-3 bg-teal-50/50">
+                                <strong class="text-teal-950 font-bold block mb-1">① アイデンティティ成就</strong>
+                                <span class="text-xs text-slate-600">（自分で悩み、決めた）[cite: 1]</span>
+                            </td>
+                            <td class="p-3">
+                                <strong class="text-teal-950 font-bold block mb-1">② モラトリアム</strong>
+                                <span class="text-xs text-slate-600">（絶賛探し中）[cite: 1]</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-bold bg-slate-100 border-r border-slate-200">【探索（ crisis ）なし】</td>
+                            <td class="p-3">
+                                <strong class="text-teal-950 font-bold block mb-1">③ 早期完了</strong>
+                                <span class="text-xs text-slate-600">（親の言う通りに決めた）[cite: 1]</span>
+                            </td>
+                            <td class="p-3 bg-rose-50/50">
+                                <strong class="text-rose-950 font-bold block mb-1">④ アイデンティティ拡散</strong>
+                                <span class="text-xs text-rose-700">（自分を見失い無気力）[cite: 1]</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified">
+                何を目指せばよいのか分からず、意識ばかりが過剰になり無気力へ陥る状態を「アイデンティティ拡散症候群」と呼びます[cite: 1]。他人の期待（早期完了）や終わらない迷い（モラトリアム）の中から抜け出すために必要なのは、最後は「自分の責任で、何をするか決める」という覚悟です[cite: 1]。目標を自分で選び取ったとき、人は初めて自分の人生の主人公になれるのです[cite: 1]。
+            </p>
+        </section>
+
+        <!-- 終幕：手放すことで満たされる ― 生涯発達と「獲得と喪失のダンス」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                終幕：手放すことで満たされる ― 生涯発達と「獲得と喪失のダンス」
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                生涯発達心理学者ポール・バルテス（Paul Baltes）は、「発達とは単に能力を獲得して伸びていくことではなく、何かを獲得すれば同時に何かを失うという、獲得と喪失が背中合わせで進行する適応の過程である」と述べました[cite: 1]。
+            </p>
+
+            <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md space-y-4 my-6 text-sm sm:text-base">
+                <p class="text-amber-300 font-bold border-b border-slate-700 pb-2">🌈 バルテスの SOCモデル（選択・最適化・補償モデル）[cite: 1]</p>
+                <div class="space-y-3 text-slate-300 text-justified">
+                    <p>
+                        <strong class="text-white">S：選択（Selection）</strong><br>
+                        あふれる可能性の中から、本当に自分にとって大切な目標だけを選び取る[cite: 1]。何かを選ぶということは、他の可能性を手放すことです[cite: 1]。
+                    </p>
+                    <p>
+                        <strong class="text-white">O：最適化（Optimization）</strong><br>
+                        選び取った大切な目標に、自分の持てる限られた時間やリソースを集中して注ぎ込む[cite: 1]。
+                    </p>
+                    <p>
+                        <strong class="text-white">C：補償（Compensation）</strong><br>
+                        年齢とともに失われた能力や不足を、工夫やツールの助けを借りて補う[cite: 1]。
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-teal-50/60 border border-teal-100 p-6 rounded-2xl text-sm sm:text-base leading-relaxed text-justified space-y-3">
+                <p class="font-bold text-teal-950 border-b border-teal-200 pb-2">✨ 内側の統合と深い充足感[cite: 1]</p>
+                <p class="text-slate-800">
+                    人生の後半における「目標」とは、他者と競い合ったり、無限の可能性を追いかけたりすることではありません[cite: 1]。古い自分や叶わなかった夢を潔く手放し、いま手元にある本当に大切なものを選び取って、そこに心を注ぐことです[cite: 1]。
+                </p>
+                <p class="text-slate-800 font-medium pt-2 border-t border-teal-200">
+                    目標の意味が「外側の獲得」から「内側の統合」へと質的に変化したとき、人は人生の終着点において、深い充足感と「英知（統合）」にたどり着くことができるのです[cite: 1]。
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 理解度確認テスト ＆ 出席・提出フォーム -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-teal-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">課題提出</span>
+                💡 理解度確認テスト ＆ 出席・提出フォーム
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】バンデューラとシャンクが行った目標設定に関する実験において、子どもたちの「自己効力感（やればできるという自信）」と学習成果を最も高めた目標の設定方法として、正しいものを一つ選びなさい[cite: 1]。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 「7日間のセッション全体で、42ページ全部を終わらせよう」という遠隔的で大きな目標を与えた[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 「結果は気にしなくていいから、とにかくベストを尽くせ」という抽象的な目標を与えた[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 「全体は見なくていい。毎日、まずは6ページずつ終わらせよう」という近接的で小さな目標を与えた[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 「クラスで一番良い成績を取って、自分の優秀さを証明しよう」という遂行接近目標を与えた[cite: 1]。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】ポール・バルテスが提唱した「SOCモデル（選択・最適化・補償モデル）」に関する説明として、最も適切なものを一つ選びなさい[cite: 1]。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 人生の発達とは「獲得」のみであり、年齢とともに失われていく能力を無視して新たなスキルを獲得し続けるプロセスである[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 多くの可能性の中から大切な目標を選び取り（選択）、そこにリソースを集中させ（最適化）、失われた能力を工夫で補う（補償）という、獲得と喪失に伴う適応のプロセスである[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 青年期に「探索」を行わずに、親や周囲の期待通りの目標をそのまま決定する心理的状態のことである[cite: 1]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 失敗して無能だと思われるのを避けるため、最初から難しい挑戦を拒絶しようとする心理的傾向のことである[cite: 1]。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 学籍番号 & 氏名入力 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                        <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                    <div>
+                        <label for="student_name" class="block text-sm font-bold text-slate-700 mb-2">氏 名</label>
+                        <input type="text" id="student_name" required placeholder="例: 四国 太郎" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                </div>
+
+                <!-- 質問・感想 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">講義の感想・自分の目標設定やアイデンティティについての考察（任意）</label>
+                    <textarea id="student_feedback" rows="4" placeholder="今回の復習内容（目標設定理論、進捗の法則、自己効力感、アイデンティティステータス、SOCモデルなど）について、学んだことや感想を自由に入力してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        すべての内容を理解し、芝崎先生へ送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- ページ個別スクリプト：Formspree送信ロジック -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById("student_id").value.trim();
+            const studentName = document.getElementById("student_name").value.trim();
+            const feedback = document.getElementById("student_feedback").value.trim() || "特になし";
+            const btn = document.getElementById("submit_btn");
+
+            // 1. クイズの自動採点（問1: C, 問2: B）
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "C") scoreCount++;
+            if (q2Answer === "B") scoreCount++;
+
+            const scoreRate = Math.floor((scoreCount / 2) * 100) + "%";
+            const subjectLabel = document.getElementById("subject_label").innerText;
+            const lectureTitle = document.title;
+
+            // 送信データ構造の整形
+            const payloadData = {
+                "科目区分": subjectLabel,
+                "講義回": lectureTitle,
+                "学籍番号": studentId,
+                "氏名": studentName,
+                "クイズ得点率": scoreRate,
+                "問1解答": q1Answer,
+                "問2解答": q2Answer,
+                "学生からの質問・感想": feedback
+            };
+
+            // ★FormspreeトークンIDをバインド
+            const FORMSPREE_ID = "xjgqbqnl"; 
+
+            btn.disabled = true;
+            btn.innerText = "送信中...";
+
+            // Formspreeのエンドポイントへ非同期POST通信
+            fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payloadData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert(`正常に記録されました（学籍番号: ${studentId}、得点率: ${scoreRate}）。第10回欠席フォロー完了として受領しました。`);
+                    btn.innerText = "送信完了";
+                } else {
+                    throw new Error("APIエラー");
+                }
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("送信に失敗しました。時間をおいて再度送信ボタンを押してください。");
+                btn.disabled = false;
+                btn.innerText = "すべての内容を理解し、芝崎先生へ送信する";
+            });
+        }
+    </script>
+</body>
+</html>
