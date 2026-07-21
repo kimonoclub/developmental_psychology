@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータルの自動スキャナーが収集・クレンジングするタイトルタグ -->
+    <title>発達心理学：第8回 人が世界を理解し成長する仕組み ―愛着の基盤から認知の発達（ピアジェ）、そして学びを支える関わり（ヴィゴツキー）まで―（フォローアップ・学習テキスト）</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- 数式を確実に自動レンダリングさせるための MathJax 設定と CDN -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                matchFontHeight: false
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady().then(() => {
+                        console.log('MathJax initial typesetting complete');
+                    });
+                }
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        /* 学術的気品を表現するハイライト装飾 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- 講義ヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p id="subject_label" class="text-xs font-bold text-teal-300 uppercase tracking-wider">発達心理学</p>
+                <h1 id="lecture_title" class="text-sm sm:text-base font-bold text-white mt-0.5">第8回：人が世界を理解し成長する仕組み ―愛着、認知発達、そして発達の最近接領域―</h1>
+            </div>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-teal-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第8回 フォローアップ・学習テキスト</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                人が世界を理解し成長する仕組み<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">―愛着の基盤から認知の発達（ピアジェ）、そして学びを支える関わり（ヴィゴツキー）まで―</span>
+            </h1>
+            <div class="w-16 h-1 bg-teal-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- 導入・概要リード文 -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-teal-50 to-slate-50 text-justified">
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    本テキストは、第8回目の発達心理学の授業を休んだ人が、授業で扱った「愛着（アタッチメント）の重要性」「感覚・知覚の万能性とシナプス刈り込み」「ピアジェの認知発達理論（感覚運動期・前操作期・保存概念）」「認知葛藤と同化・調整のメカニズム」、そして「ブルーナーの発見学習とヴィゴツキーの発達の最近接領域（ZPD）」について体系的に学習できるように作成されたフォロー教材です[cite: 4, 5]。
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. 【プロローグ】心の安全基地と愛着（アタッチメント） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                1. 【プロローグ】心の安全基地と愛着（アタッチメント）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                講義の冒頭では、人として生きていくための根本となる「人間関係の基盤（愛着）」について確認しました[cite: 4, 5]。
+            </p>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base mb-6 text-justified">
+                <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">👑 皇帝フリードリヒ2世の悲しい実験[cite: 4, 5]</p>
+                <p class="text-slate-700 leading-relaxed">
+                    13世紀の皇帝フリードリヒ2世は、「赤ん坊に一切話しかけず、目も合わせず、ミルクとオムツ替えだけを与えて育てたら、人類最初の言語は何を話すか？」という実験を行いました[cite: 4, 5]。結果は、言葉を話す前に<strong class="highlight">赤ちゃん全員が死亡してしまった</strong>のです[cite: 4, 5]。
+                </p>
+                <p class="text-xs text-slate-500 mt-2">
+                    人はただ栄養を摂るだけでは生きていけず、目を合わせ、微笑みかけられるといった「愛情ある情緒的関わり」が命の維持に不可欠であることを示す歴史的エピソードです[cite: 4, 5]。
+                </p>
+            </div>
+
+            <div class="space-y-4 text-sm sm:text-base">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ プロトタイプ（心の基本型）[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        精神科医ジョン・ボウルビィは、特定の人物と結ぶ強い情緒的絆を「愛着」と呼びました[cite: 4, 5]。幼少期に適切な愛着が育まれると、「困ったときに人は助けてくれる」「世界は安全だ」という基本的人間信頼（プロトタイプ）が心の中に形作られます[cite: 4, 5]。
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ 逆境的小児期体験（ACE）と脳内ホルモン[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        幼少期に虐待やネグレクトなどの逆境（ACE）を体験すると、愛着から分泌される安心ホルモン「オキシトシン」が不足します[cite: 4, 5]。その寂しさや不安を埋めるため、将来的に過食、依存症、危険な行動に走りやすくなり、平均寿命や健康状態にも深刻な影響を及ぼすことが分かっています[cite: 4, 5]。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 【第1章】世界に適応する脳（知覚の万能性とシナプスの刈り込み） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                2. 【第1章】世界に適応する脳（知覚の万能性とシナプスの刈り込み）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                赤ちゃんは、大人には真似できない「驚くべき万能の能力」を持って生まれてきます[cite: 4, 5]。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🌐 赤ちゃんは「世界市民」として生まれてくる[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        生後まもない乳児は、日本語にはない英語の「R と L」の発音の違い、韓国語の母音の違い、さらには<strong class="highlight">「一頭一頭のお猿さんの顔の違い」まで見分ける能力</strong>を持っています[cite: 4, 5]。地球上のどの環境に生まれても生きられるよう、生まれた瞬間はあらゆる刺激を識別できる「万能の脳」を用意しているためです[cite: 4, 5]。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">✂️ シナプスの刈り込み（Pruning）[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        成長するにつれて使わない無駄な脳の配線（シナプス）を削ぎ落とし、自分が生きる環境に必要な能力（日本語の理解など）に脳の資源を集中させる合理的な仕組みを「シナプス刈り込み」と呼びます[cite: 4, 5]。
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-teal-50/60 border border-teal-100 p-5 rounded-xl text-sm sm:text-base leading-relaxed text-justified">
+                <p class="font-bold text-teal-950 mb-1">💡 発達障害（ASD等）とシナプス刈り込み[cite: 4, 5]</p>
+                <p class="text-slate-800">
+                    自閉スペクトラム症（ASD）などの神経発達の個性は、この「シナプス刈り込み」の進み方の違い（刈り込みが少なく情報が過剰に入りやすい等）と関連している可能性が指摘されています[cite: 4, 5]。ある状態を単に「悪いこと」と非難するのではなく、「そういう前提（個性）」として捉え、「どうすれば本人の生きづらさや苦しみが減るか」を考える視点が大切です[cite: 4, 5]。
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 【第2章・第3章】子どもはどうやって世界を知るのか？（ピアジェの認知発達理論） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                3. 【第2章・第3章】子どもはどうやって世界を知るのか？（ピアジェの認知発達理論）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                ジャン・ピアジェ（Jean Piaget）は、子どもは大人の教えを丸暗記するのではなく、**「自分自身で環境に働きかけ、試行錯誤しながら世界を理解する知識を作り上げていく（構成主義）」**と考えました[cite: 4, 5]。
+            </p>
+
+            <div class="space-y-6">
+                <!-- 第Ⅰ期 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🍼 第Ⅰ期：感覚運動期（誕生〜2歳頃）[cite: 4, 5]</p>
+                    <p class="text-slate-700 text-justified mb-3">
+                        見ること、触ること、吸うことなどの「感覚」と「運動」を通して世界を理解する時期です[cite: 4, 5]。
+                    </p>
+                    <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+                        <p>・<strong>第一次循環反応（1〜4ヶ月頃）：</strong> 自分の身体を使った偶然の行動（指しゃぶり等）を繰り返す[cite: 4, 5]。</p>
+                        <p>・<strong>第二次循環反応（4〜8ヶ月頃）：</strong> ガラガラを振ると音が鳴るなど、外の世界のモノに変化を起こす行動を繰り返す[cite: 4, 5]。</p>
+                        <p>・<strong>ものの永続性の獲得（8〜12ヶ月頃）：</strong> 目の前のオモチャを布で隠しても「布の下に存在し続けている」ことを理解して探せるようになる[cite: 4, 5]。</p>
+                        <p>・<strong>第三次循環反応（12〜18ヶ月頃）：</strong> あえてやり方を変えて「こうしたらどうなるだろう？」と試行錯誤（実験）を楽しむ[cite: 4, 5]。</p>
+                    </div>
+                </div>
+
+                <!-- 第Ⅱ期 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🎈 第Ⅱ期：前操作期（2歳〜7歳頃）[cite: 4, 5]</p>
+                    <p class="text-slate-700 text-justified mb-3">
+                        言葉やシンボルを使って考えるようになりますが、まだ直感や見た目に大きく左右される時期です[cite: 4, 5]。
+                    </p>
+                    <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+                        <p>・<strong>アニミズム（生命観）：</strong> 「すべてのものに命や心がある」と考える（例：「時計は動くから生きている」）[cite: 4, 5]。</p>
+                        <p>・<strong>自己中心性（三山課題）：</strong> 他人の視点に立って物事を見ることが難しく、「向かい側に座っている人からも自分と同じ風景が見えているはずだ」と思い込む[cite: 4, 5]。</p>
+                        <p>・<strong>保存概念の不成立：</strong> 同じ量の水を細長いコップに入れ替えると「背が高い方が水が多い！」と答えたり、ボールの間隔を広げると「青いボールの方が多い！」と感じてしまう（見た目に騙される）[cite: 4, 5]。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 【第4章】「あれ？」という不完全さが人を成長させる（認知葛藤と同化・調整） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                4. 【第4章】「あれ？」という不完全さが人を成長させる（認知葛藤と同化・調整）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                子どもはどのようにして「見た目の騙され」を乗り越え、論理的な思考を獲得していくのでしょうか[cite: 4, 5]。ピアジェはそのメカニズムを**「同化」「調整」「均衡化」**で説明しました[cite: 4, 5]。
+            </p>
+
+            <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md space-y-3 text-xs sm:text-sm my-6">
+                <p class="text-teal-400 font-bold border-b border-slate-700 pb-2">🔄 子どもの認知発達のステップ[cite: 4, 5]</p>
+                <p>1. <strong>既存の認知構造（シェマ）：</strong> 例「動くものはすべて生き物だ！」[cite: 4, 5]</p>
+                <p>2. <strong>同化（Assimilation）：</strong> 目の前の現象を自分のシェマに当てはめる（例「時計はカチコチ動くから生き物だ！」）[cite: 4, 5]。</p>
+                <p class="text-amber-300 font-bold">3. 認知葛藤（Cognitive Conflict）★超重要！：<br>自分のシェマでは説明できない矛盾に直面する（例「えっ？ 時計は動くけどご飯食べないし赤ちゃんも生まないぞ…『あれ？』」）[cite: 4, 5]。</p>
+                <p>4. <strong>調整（Accommodation）：</strong> 矛盾を解決するために自分のシェマを書き換える（例「『自力で動き、生命活動をするもの』が生き物なんだ！」）[cite: 4, 5]。</p>
+                <p>5. <strong>均衡化（Equilibration）：</strong> より高度で論理的な認知構造へとレベルアップする[cite: 4, 5]！</p>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 p-5 rounded-xl text-sm sm:text-base space-y-2">
+                <p class="font-bold text-amber-950">💡 認知葛藤（Cognitive Conflict）とは？[cite: 4, 5]</p>
+                <p class="text-slate-800 text-justified">
+                    自分の持っている既存の考え方（シェマ）では、目の前の事実や現象を説明できなくなったときに生じる<strong class="highlight">「心理的な違和感・モヤモヤ（不均衡状態）」</strong>のことです[cite: 4, 5]。この「あれ？」という葛藤を経験し、自分で乗り越えようとするときに初めて、脳は新しい論理的な思考へと再構成を遂げます[cite: 4, 5]。
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. 【第5章】学びを深める関わり（発見学習と発達の最近接領域） -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                5. 【第5章】学びを深める関わり（発見学習と発達の最近接領域）
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                ピアジェやヴィゴツキーの理論は、教育や大人の関わり方に大きなヒントを与えています[cite: 4, 5]。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ 単に教えても知識は消えてしまう（素朴概念と学力剥離）[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        学校で暗記させられた知識は、数年経つと忘れて直感的な思い込み（素朴概念）に戻ってしまう現象（学力剥離）が起きます[cite: 4, 5]。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ ブルーナーの「発見学習」[cite: 4, 5]</p>
+                    <p class="text-slate-700">
+                        大人が答えを教え込むのではなく、子ども自身に「あれ？」という認知葛藤を体験させ、自分で知識の生成過程をたどって発見させる学習が最も深い学びに繋がります[cite: 4, 5]。
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">■ ヴィゴツキーの「発達の最近接領域（ZPD）」[cite: 4, 5]</p>
+                    <p class="text-slate-700 mb-2">
+                        子どもの発達には「1. 一人でできること」「2. 手助けがあればできること（ZPD）」「3. まだ絶対できないこと」の3領域があります[cite: 4, 5]。
+                    </p>
+                    <p class="text-xs text-teal-900 font-bold bg-teal-50 p-2.5 rounded border border-teal-100">
+                        大人の役割は、子どもががんばっていることがどちらなのかを見極め、**「発達の最近接領域（ZPD）」に対して適切なヒントや足場かけ（スキャフォールディング）を行い、見守ること**です[cite: 4, 5]。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 理解度確認テスト ＆ 出席・提出フォーム -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-teal-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">課題提出</span>
+                💡 理解度確認テスト ＆ 出席・提出フォーム
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】ピアジェの認知発達理論における「認知葛藤（Cognitive Conflict）」と発達のメカニズムに関する説明として、最も適切なものを一つ選びなさい[cite: 4, 5]。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 既存の認知構造（シェマ）だけで外界の出来事をすべて完璧に説明できている、安定した状態のことである[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 自分の持っている認知構造では目の前の現象を説明できなくなったときに生じる「心理的な不均衡（モヤモヤ）」であり、これを解消するために「調整」が行われることで、より高度な認知構造へと発達する[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 大人が子どもに正解や正しいルールを直接教え込むことによって、一瞬で認知構造が上書きされる現象のことである[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 幼児期のアニミズム思考が大人になっても消えずにそのまま残り続ける心理的障害のことである[cite: 4, 5]。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】ヴィゴツキーが提唱した「発達の最近接領域（ZPD）」に関する説明として、最も適切なものを一つ選びなさい[cite: 4, 5]。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 子どもが「誰の助けも借りずに、自力で一人でできること」の領域のことである[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 大人がどれだけ手厚く手助けや指導をしても、子どもの現在の年齢では絶対に達成不可能な領域のことである[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 「一人でできること」と「他者の適切な手助けや手本があればできること」の間の領域であり、大人が適切な足場かけ（サポート）を行うべき教育的に重要な領域である[cite: 4, 5]。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 幼少期に愛情ホルモンであるオキシトシンが不足したときに発生する、対人不安の領域のことである[cite: 4, 5]。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 学籍番号 & 氏名入力 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                        <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                    <div>
+                        <label for="student_name" class="block text-sm font-bold text-slate-700 mb-2">氏 名</label>
+                        <input type="text" id="student_name" required placeholder="例: 四国 太郎" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                </div>
+
+                <!-- 質問・感想 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">講義の感想・認知葛藤や大人の関わりについての考察（任意）</label>
+                    <textarea id="student_feedback" rows="4" placeholder="今回の復習内容（愛着、シナプス刈り込み、ピアジェの認知発達理論、認知葛藤、発達の最近接領域など）について、学んだことや感想を自由に入力してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        すべての内容を理解し、芝崎先生へ送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- ページ個別スクリプト：Formspree送信ロジック -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById("student_id").value.trim();
+            const studentName = document.getElementById("student_name").value.trim();
+            const feedback = document.getElementById("student_feedback").value.trim() || "特になし";
+            const btn = document.getElementById("submit_btn");
+
+            // 1. クイズの自動採点（問1: B, 問2: C）
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "B") scoreCount++;
+            if (q2Answer === "C") scoreCount++;
+
+            const scoreRate = Math.floor((scoreCount / 2) * 100) + "%";
+            const subjectLabel = document.getElementById("subject_label").innerText;
+            const lectureTitle = document.title;
+
+            // 送信データ構造の整形
+            const payloadData = {
+                "科目区分": subjectLabel,
+                "講義回": lectureTitle,
+                "学籍番号": studentId,
+                "氏名": studentName,
+                "クイズ得点率": scoreRate,
+                "問1解答": q1Answer,
+                "問2解答": q2Answer,
+                "学生からの質問・感想": feedback
+            };
+
+            // ★FormspreeトークンIDをバインド
+            const FORMSPREE_ID = "xjgqbqnl"; 
+
+            btn.disabled = true;
+            btn.innerText = "送信中...";
+
+            // Formspreeのエンドポイントへ非同期POST通信
+            fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payloadData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert(`正常に記録されました（学籍番号: ${studentId}、得点率: ${scoreRate}）。第8回欠席フォロー完了として受領しました。`);
+                    btn.innerText = "送信完了";
+                } else {
+                    throw new Error("APIエラー");
+                }
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("送信に失敗しました。時間をおいて再度送信ボタンを押してください。");
+                btn.disabled = false;
+                btn.innerText = "すべての内容を理解し、芝崎先生へ送信する";
+            });
+        }
+    </script>
+</body>
+</html>
