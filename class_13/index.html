@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータルの自動スキャナーが収集・クレンジングするタイトルタグ -->
+    <title>発達心理学：第13回 人生は気質とのたたかい ―気質の歴史、進化心理学、精神交互作用、そしてセルフ・コンパッションの科学―（フォローアップ・学習テキスト）</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- ★数式を確実に自動レンダリングさせるための MathJax 設定と CDN -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                matchFontHeight: false
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady().then(() => {
+                        console.log('MathJax initial typesetting complete');
+                    });
+                }
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        /* 学術的気品を表現するハイライト装飾 */
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- 講義ヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p id="subject_label" class="text-xs font-bold text-teal-300 uppercase tracking-wider">発達心理学</p>
+                <h1 id="lecture_title" class="text-sm sm:text-base font-bold text-white mt-0.5">第13回：人生は気質とのたたかい ―気質の歴史、進化心理学、精神交互作用、そしてセルフ・コンパッションの科学―</h1>
+            </div>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-teal-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第13回 フォローアップ・学習テキスト</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                人生は気質とのたたかい<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">―気質の歴史、進化心理学、精神交互作用、そしてセルフ・コンパッションの科学―</span>
+            </h1>
+            <div class="w-16 h-1 bg-teal-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- 導入・はじめに -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-teal-50 to-slate-50 text-justified">
+                <p class="font-bold text-teal-950 mb-2 border-b border-teal-200 pb-1">■ はじめに：気質とは何か</p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-3">
+                    発達心理学において、人間が生まれ持っている行動や反応の傾向を<strong class="highlight">「気質」</strong>と呼びます。気質は遺伝的な基盤を強く持ち、発達の早期から現れる特徴であり、体質といった生理学的な側面と深く結びついています。
+                </p>
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    私たちは誰しも、生まれ持った気質という「ものさし」を通して世界を体験し、環境に反応しながら成長していきます。そのため、古代から<strong class="highlight">「人生は気質とのたたかいである」</strong>と言われてきました。
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. 気質をめぐる歴史的アプローチと3人の業績 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                1. 気質をめぐる歴史的アプローチと3人の業績
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                人間の気質や個人差を科学的・生理学的に説明しようとした試みは、歴史上多くの研究者によって行われてきました。ここでは主要な3人の業績を詳しく見ていきます。
+            </p>
+
+            <div class="space-y-6">
+                <!-- ガレノス -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🍷 ガレノスの業績（体液病理説と4つの気質）</p>
+                    <p class="text-slate-700 text-justified mb-3">
+                        古代ローマの医師ガレノスは、人間の身体は4つの体液（血液、黄胆汁、黒胆汁、粘液）で構成されており、どの体液が優勢であるかによってその人の気質や性格が決まると考えました。
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm mb-3">
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200"><strong class="text-teal-900">多血質（血液が優勢）：</strong> 明るく社交的で活動的。</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200"><strong class="text-teal-900">胆汁質（黄胆汁が優勢）：</strong> 感情の起伏が激しく怒りっぽい。</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200"><strong class="text-teal-900">黒胆汁質（黒胆汁が優勢）：</strong> 物静かで憂鬱になりやすく慎重。</div>
+                        <div class="bg-slate-50 p-2.5 rounded border border-slate-200"><strong class="text-teal-900">粘液質（粘液が優勢）：</strong> おっとりとして冷静・勤勉。</div>
+                    </div>
+                    <p class="text-xs text-slate-600 text-justified">
+                        ガレノスは、体質といった生理学的な状態と人間の行動の個人差を最初に結びつけた人物であり、現代の気質論にもその名残を残しています。
+                    </p>
+                </div>
+
+                <!-- クレッチマー -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">📏 クレッチマーの業績（体型と気質の類型論）</p>
+                    <p class="text-slate-700 text-justified mb-3">
+                        ドイツの精神医学者クレッチマーは、人間の「体型」と「性格・気質」、そして精神疾患の罹りやすさには深い関連があるとして類型論を提唱しました。
+                    </p>
+                    <div class="space-y-1.5 text-xs sm:text-sm text-slate-700 mb-3">
+                        <p>・<strong>肥満型（丸みを帯びた体型）：</strong> 社交的でユーモアがあり、気分の波がある（躁うつ病親和型）。</p>
+                        <p>・<strong>細長型（やせ型でひょろっとした体型）：</strong> 内省的で神経質、物静か（統合失調症親和型）。</p>
+                        <p>・<strong>闘士型（筋肉質でがっちりした体型）：</strong> エネルギッシュで粘り強い（てんかん親和型）。</p>
+                    </div>
+                    <p class="text-xs text-slate-600 text-justified">
+                        現代では単純な体型決定論は否定されていますが（体型は環境や習慣の要因も大きいため）、身体的特徴と心理的傾向の相関に着目した点は個人差研究の大きな一歩となりました。
+                    </p>
+                </div>
+
+                <!-- パブロフ -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🐕 パブロフの業績（条件反射と神経系の型）</p>
+                    <p class="text-slate-700 text-justified mb-2">
+                        ロシアの生理学者パブロフは、イヌを用いた条件反射の実験の過程で、個体ごとの「反応の違い（気質）」に注目しました。条件反射の形成や消去・弁別による抑制、新しい刺激への切り替えの速さに個体差があることを見出しました。
+                    </p>
+                    <p class="text-slate-700 text-justified">
+                        パブロフは、大脳皮質の<strong class="highlight">「興奮」と「抑制」の強さ・バランス・切り替えの速さ（可動性）</strong>の組み合わせによって神経系の型（気質）が決まると考えました。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. なぜ気質の影響を受けやすいのか：進化心理学と精神交互作用 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                2. なぜ気質の影響を受けやすいのか：進化心理学と精神交互作用
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                人間が些細なことにとらわれたり、過剰に不安を感じたりしやすい背景には、人類の進化の歴史が関係しています。
+            </p>
+
+            <div class="bg-white border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3 mb-6 shadow-sm">
+                <p class="font-bold text-teal-950">🦁 サバンナで育まれた「超・集中力」のスイッチ</p>
+                <p class="text-slate-700 text-justified">
+                    原始的なサバンナ環境では、茂みで「カサッ」という音がしたとき、それを放置すれば捕食者に襲われて命を落とします。そのため人間は、生存に関わるわずかな異変や不快感に注意をあえて集中させ、警戒を強める脳回路を発達させました。
+                </p>
+                <p class="text-xs text-teal-900 font-bold">
+                    私たちが不安や危険にとらわれる性質は、かつて生存に不可欠だった「超・集中力」のスイッチの名残なのです。
+                </p>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 p-5 rounded-xl text-sm sm:text-base space-y-3">
+                <p class="font-bold text-amber-950">🌀 森田正馬が提唱した「精神交互作用」の悪循環</p>
+                <p class="text-slate-800 text-justified">
+                    現代社会においてこの警戒機能が過剰に働くと、精神科医の森田正馬が提唱した「精神交互作用」という苦しみのメカニズムが引き起こされます。
+                </p>
+                <p class="text-slate-800 text-justified">
+                    一度気になった身体の不調や不安を「消そう」「何とかして取り除こう」と意識すればするほど、かえってその感覚に注意が強く向かい、感覚がますます鋭敏になって苦痛が拡大してしまいます。この「症状を何とかしようとする頭の中の戦い（とらわれ）」こそが、現代人が抱える苦しみの正体です。
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 苦しみを避けるためのアプローチ：目的本位とセルフ・コンパッション -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                3. 苦しみを避けるためのアプローチ：目的本位とセルフ・コンパッション
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                精神交互作用による「とらわれ」から抜け出し、健やかに生きるためには、以下の2つのアプローチが極めて有効です。
+            </p>
+
+            <div class="space-y-6">
+                <!-- 目的本位 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🎯 ① 目的本位</p>
+                    <p class="text-slate-700 text-justified mb-2">
+                        不安や雑念、嫌な感覚を「無理に消そうとすること」をやめるのが出発点です。
+                    </p>
+                    <p class="text-slate-700 text-justified">
+                        不安を感じたままそれをあるがままに受け止め、今自分にとって本当に必要な目の前の行動に意識を注ぐ生き方を「目的本位」と呼びます。今この瞬間のやるべきことに注意を向け、雑念が生じても評価せずに観察するスキル（マインドフルネス）を磨くことが大切です。
+                    </p>
+                </div>
+
+                <!-- セルフ・コンパッション -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base">
+                    <p class="font-bold text-teal-950 mb-2 border-b border-slate-100 pb-1">🌱 ② セルフ・コンパッション（Self-Compassion）</p>
+                    <p class="text-slate-700 text-justified mb-3">
+                        自分を厳しく責めるのをやめ、困難な状況にある自分に対して、まるで<strong class="highlight">「大切な親友に接するように温かく思いやりを持つ態度」</strong>を指します。
+                    </p>
+                    
+                    <div class="bg-teal-50/60 p-4 rounded-xl border border-teal-100 space-y-2 text-xs sm:text-sm">
+                        <p class="font-bold text-teal-950">🧠 脳科学から見た効果：</p>
+                        <p class="text-slate-800">・脳の恐怖・不安センサーである「扁桃体」の活動が鎮まる。</p>
+                        <p class="text-slate-800">・ストレスホルモンである「コルチゾール」の過剰な分泌が抑制される。</p>
+                        <p class="text-slate-800">・心拍を落ち着かせ、回復を助ける愛情ホルモン「オキシトシン」の分泌が促進される。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md text-sm sm:text-base leading-relaxed text-justified mt-6 space-y-2">
+                <p class="text-amber-300 font-bold border-b border-slate-700 pb-2">💡 現代心理学の結論：「遺伝 × 環境 × 発達 × 学習」</p>
+                <p class="text-slate-300">
+                    現代心理学は、人間を静的な存在ではなく相互作用のプロセスとして捉えます。遺伝的な気質や過去の逆境があったとしても、目的本位に生きる習慣や自分を大切にするセルフ・コンパッションを育むことで、私たちは自身の心と反応を健やかに調整していくことができるのです。
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 理解度確認テスト ＆ 出席・提出フォーム -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-teal-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">課題提出</span>
+                💡 理解度確認テスト ＆ 出席・提出フォーム
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                
+                <!-- 問1 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問1】古代ローマの医師ガレノスが提唱した、人間の気質を説明するための分類の基礎となった考え方はどれか。最も適切なものを一つ選びなさい。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 大脳皮質の興奮と抑制のバランスに基づく神経系の型</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 身体の4つの体液のバランスに基づく気質分類</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 人間の体型（肥満型・細長型・闘士型）に基づく類型論</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 認知革命によって獲得された虚構を共有する能力</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 問2 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【問2】森田正馬が提唱した「精神交互作用」に関する説明として、最も適切なものを一つ選びなさい。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 不安や不快な感覚を無理に消そうと意識するほど、かえって注意が集中して苦痛が拡大する悪循環のこと</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 遺伝的な気質と生育環境の相互作用によって、個人の知能が発達していくプロセスのこと</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 自分のことを大切な友人のように優しく思いやり、脳内のコルチゾール分泌を抑える方法のこと</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 茂みの物音などを見逃さないように人間が進化の過程で獲得した「超・集中力」そのもののこと</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 学籍番号 & 氏名入力 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                        <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                    <div>
+                        <label for="student_name" class="block text-sm font-bold text-slate-700 mb-2">氏 名</label>
+                        <input type="text" id="student_name" required placeholder="例: 四国 太郎" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                </div>
+
+                <!-- 質問・感想 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">講義の感想・セルフ・コンパッションや目的本位の考え方についての考察（任意）</label>
+                    <textarea id="student_feedback" rows="4" placeholder="今回の復習内容（気質の歴史、進化心理学、精神交互作用、目的本位やセルフ・コンパッションなど）について、学んだことや感想を自由に入力してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        すべての内容を理解し、芝崎先生へ送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- ページ個別スクリプト：Formspree送信ロジック -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById("student_id").value.trim();
+            const studentName = document.getElementById("student_name").value.trim();
+            const feedback = document.getElementById("student_feedback").value.trim() || "特になし";
+            const btn = document.getElementById("submit_btn");
+
+            // 1. クイズの自動採点（問1: B, 問2: A）
+            let scoreCount = 0;
+            const q1Answer = document.querySelector('input[name="q1"]:checked').value;
+            const q2Answer = document.querySelector('input[name="q2"]:checked').value;
+
+            if (q1Answer === "B") scoreCount++;
+            if (q2Answer === "A") scoreCount++;
+
+            const scoreRate = Math.floor((scoreCount / 2) * 100) + "%";
+            const subjectLabel = document.getElementById("subject_label").innerText;
+            const lectureTitle = document.title;
+
+            // 送信データ構造の整形
+            const payloadData = {
+                "科目区分": subjectLabel,
+                "講義回": lectureTitle,
+                "学籍番号": studentId,
+                "氏名": studentName,
+                "クイズ得点率": scoreRate,
+                "問1解答": q1Answer,
+                "問2解答": q2Answer,
+                "学生からの質問・感想": feedback
+            };
+
+            // ★FormspreeトークンIDをバインド
+            const FORMSPREE_ID = "xjgqbqnl"; 
+
+            btn.disabled = true;
+            btn.innerText = "送信中...";
+
+            // Formspreeのエンドポイントへ非同期POST通信
+            fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payloadData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert(`正常に記録されました（学籍番号: ${studentId}、得点率: ${scoreRate}）。第13回欠席フォロー完了として受領しました。`);
+                    btn.innerText = "送信完了";
+                } else {
+                    throw new Error("APIエラー");
+                }
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("送信に失敗しました。時間をおいて再度送信ボタンを押してください。");
+                btn.disabled = false;
+                btn.innerText = "すべての内容を理解し、芝崎先生へ送信する";
+            });
+        }
+    </script>
+</body>
+</html>
